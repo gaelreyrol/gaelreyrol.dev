@@ -1,7 +1,16 @@
 <template>
-  <div>
-    <div>
-      <h1>Gaël Reyrol</h1>
-    </div>
-  </div>
+  <NuxtContent
+    class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
+    :document="document"
+  />
 </template>
+
+<script>
+export default {
+  async asyncData({ $content }) {
+    const document = await $content('bio').fetch()
+
+    return { document }
+  }
+}
+</script>

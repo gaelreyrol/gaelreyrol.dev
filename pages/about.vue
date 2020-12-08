@@ -8,7 +8,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const document = await $content('intro').fetch()
+    const document = await $content('about').fetch()
 
     return { document }
   }

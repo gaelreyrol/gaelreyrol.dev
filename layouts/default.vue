@@ -8,6 +8,9 @@
           alt="Gaël Reyrol"
         />
       </NuxtLink>
+      <a href="https://onestla.tech/" target="_blank" rel="noopener">
+        #OnEstLaTech
+      </a>
       <NuxtLink
         to="/about"
         active-class="underline"
@@ -16,6 +19,7 @@
         À propos
       </NuxtLink>
     </header>
-    <Nuxt />
+    <Nuxt class="mb-16" />
+    <footer class="p-4">Fait avec Nuxt.js et hébergé par Github</footer>
   </div>
 </template>

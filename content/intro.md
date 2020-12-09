@@ -10,6 +10,8 @@ Vous pouvez me retrouver à différents endroits :
 - [Github](https://github.com/gaelreyrol)
 - [Gitlab](https://gitlab.com/GaelReyrol)
 - [Linkedin](https://linkedin.com/in/gaelreyrol)
+- [WeLoveDev](https://gaelreyrol.welovedevs.com)
 - [Keybase](https://keybase.io/zevran)
-- [BrownBagLunch](https://www.brownbaglunch.fr/baggers.html#gael-reyrol)
 - [StackShare](https://stackshare.io/gaelreyrol/fullstack-and-ops)
+
+Et me contacter à l'adresse suivante : [me@gaelreyrol.dev](mailto:me@gaelreyrol.dev)

@@ -6,7 +6,7 @@ Je suis actuellement en charge du développement Web chez [Dans Ma Culotte](http
 
 Je me considère comme un développeur **Full Stack** et **Ops**.
 
-Mon expérience est particulièrement concentrée sur les frameworks **Nuxt.js** et **Laravel** dans un environnement applicatif plutôt standard utilisant **Redis** et **PostgreSQL**.
+Mon expérience est particulièrement concentrée sur les frameworks **Nuxt.js** et **Laravel** dans un environnement applicatif plutôt standard utilisant **Redis**, **PostgreSQL** et **S3** par exemple.
 
 Pour autant je suis complètement à l'aise sur d'autres frameworks et langages comme **Go**, **Node.js** ou **Express** et j'ai une forte capacité d'adaptation, d'appropriation concernant des sujets que je ne maitrise pas.
 

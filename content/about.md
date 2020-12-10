@@ -2,7 +2,7 @@
 
 Je suis actuellement en charge du développement Web chez [Dans Ma Culotte](https://dansmaculotte.com) en télétravail à [Lille](https://www.openstreetmap.org/relation/58404). 
 
-> TL;DR: Mon expérience est très orientée Web, 2 mots : **Nuxt.js** et **Laravel**.
+> TL;DR: Je suis développeur Full Stack avec pincée d'Ops.
 
 Mon expérience est particulièrement concentrée sur les frameworks **Nuxt.js** et **Laravel** dans un environnement applicatif plutôt standard utilisant **Redis**, **PostgreSQL** et **S3** par exemple.
 
@@ -15,7 +15,6 @@ Je suis un grand adepte des principes de l'**application 12 facteurs**, j'aime t
 D'ailleurs je pratique assidûment le **CI** & **CD** que ce soit avec **Gitlab** ou **Github** et des kudos pour **Clever Cloud**.
 
 La **veille technologique** m'est **indispensable**, j'y passe pas mal de temps pour éviter d'en perdre plus tard que ce soit pour les **nouveaux outils** ou les **nouvelles fonctionnalités des frameworks** et **langages**.
-Cela me permet de maintenir une capacité d'écoute et d'évolution pour des **problématiques à venir**. Je ne remercierai jamais assez les nombreux blogs disposant de **flux RSS**.
 
 J'essaye de me mettre au **Rust** (j'aime le C), au **Web Assembly**, aux **Web Components**, à **API Platform** et à **Symfony** mais les journées sont un peu trop courtes.
 

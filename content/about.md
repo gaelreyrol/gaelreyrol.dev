@@ -2,7 +2,7 @@
 
 Je suis actuellement en charge du développement Web chez [Dans Ma Culotte](https://dansmaculotte.com) en télétravail à [Lille](https://www.openstreetmap.org/relation/58404). 
 
-> TL;DR: Je suis développeur Full Stack avec pincée d'Ops.
+> TL;DR: Je suis développeur Full Stack avec une pincée d'Ops.
 
 Mon expérience est particulièrement concentrée sur les frameworks **Nuxt.js** et **Laravel** dans un environnement applicatif plutôt standard utilisant **Redis**, **PostgreSQL** et **S3** par exemple.
 

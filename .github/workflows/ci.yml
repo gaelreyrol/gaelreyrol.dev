@@ -79,8 +79,8 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-        - name: Generate
-          run: yarn run generate
+      - name: Generate
+        run: yarn run generate
 
       - name: rclone
         uses: wei/rclone@v1

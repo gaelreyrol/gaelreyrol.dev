@@ -24,8 +24,8 @@
         À propos
       </NuxtLink>
     </header>
-    <Nuxt class="mb-16" />
-    <footer class="p-4">
+    <Nuxt class="px-4 pb-16" />
+    <footer class="p-4 border-t-2">
       Fait avec <strong>Nuxt.js</strong> et hébergé par
       <strong>Clever Cloud</strong>
     </footer>

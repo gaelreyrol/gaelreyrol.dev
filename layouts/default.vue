@@ -26,8 +26,8 @@
     </header>
     <Nuxt class="px-4 pb-16" />
     <footer class="p-4 border-t-2">
-      Fait avec <strong>Nuxt.js</strong> et hébergé par
-      <strong>Clever Cloud</strong>
+      Fait avec <strong>Nuxt.js</strong> & <strong>Tailwind CSS</strong> /
+      Hébergé par <strong>Clever Cloud</strong>
     </footer>
   </div>
 </template>

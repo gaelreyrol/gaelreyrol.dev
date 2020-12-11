@@ -10,6 +10,5 @@ Vous pouvez me retrouver à différents endroits :
 - [Linkedin](https://linkedin.com/in/gaelreyrol)
 - [WeLoveDev](https://gaelreyrol.welovedevs.com)
 - [Keybase](https://keybase.io/zevran)
-- [StackShare](https://stackshare.io/gaelreyrol/fullstack-and-ops)
 
 Et me contacter à l'adresse suivante : [me@gaelreyrol.dev](mailto:me@gaelreyrol.dev)

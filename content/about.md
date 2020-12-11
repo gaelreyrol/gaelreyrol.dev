@@ -6,7 +6,7 @@ Je suis actuellement en charge du développement Web chez [Dans Ma Culotte](http
 
 Mon expérience est particulièrement concentrée sur les frameworks **Nuxt.js** et **Laravel** dans un environnement applicatif plutôt standard utilisant **Redis**, **PostgreSQL** et **S3** par exemple.
 
-Pour autant je suis complètement à l'aise sur d'autres frameworks et langages comme **Go**, **Node.js**, **React** ou encore **Express** et j'ai une forte capacité d'adaptation concernant des sujets que je ne maitrise pas.
+Pour autant je suis complètement à l'aise sur d'autres frameworks et langages comme **Golang**, **Node.js** ou encore **Express** et j'ai une forte capacité d'adaptation concernant des sujets que je ne maitrise pas.
 
 Avec un pied dans l'**Ops** pendant 2 ans, j'ai principalement travaillé avec le cloud d'**AWS**, la suite **Hashicorp** (Terraform, Packer, Vagrant, Vault) et **Ansible** pour la partie Infrastructure As Code,
 **Prometheus** et **Grafana** pour le monitoring, **Apache Mesos** et **Kubernetes** pour l'orchestration.
@@ -16,7 +16,7 @@ D'ailleurs je pratique assidûment le **CI** & **CD** que ce soit avec **Gitlab*
 
 La **veille technologique** m'est **indispensable**, j'y passe pas mal de temps pour éviter d'en perdre plus tard que ce soit pour les **nouveaux outils** ou les **nouvelles fonctionnalités des frameworks** et **langages**.
 
-J'essaye de me mettre au **Rust** (j'aime le C), au **Web Assembly**, aux **Web Components**, à **API Platform** et à **Symfony** mais les journées sont un peu trop courtes.
+J'essaye de me mettre au **Rust** (j'aime le C), au **Web Assembly**, aux **Web Components**, à **API Platform**, à **Symfony** et à **NixOS** mais les journées sont un peu trop courtes.
 
 Sinon j'ai appris la **programmation informatique** à partir de 12, 13 ans en bidouillant des serveurs privés **World of Warcraft** en utilisant TrinityCore et Mangos.
 Mes premières lignes de code ont commencé par du **SQL**, des patchs de bugs en **C++** et de la **ligne de commande** sur des petits serveurs dédiés Online avec **Debian**.

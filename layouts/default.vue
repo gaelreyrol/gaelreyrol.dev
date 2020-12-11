@@ -23,6 +23,13 @@
       >
         À propos
       </NuxtLink>
+      <NuxtLink
+        to="/stack"
+        active-class="underline"
+        class="font-medium text-sm sm:text-md lg:text-xl"
+      >
+        Ma stack
+      </NuxtLink>
     </header>
     <Nuxt class="px-4 pb-16" />
     <footer class="p-4 border-t-2">

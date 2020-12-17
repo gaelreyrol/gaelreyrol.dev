@@ -6,7 +6,7 @@ Je suis actuellement en charge du développement Web chez [Dans Ma Culotte](http
 
 Mon expérience est particulièrement concentrée sur les frameworks **Nuxt.js** et **Laravel** dans un environnement applicatif plutôt standard utilisant **Redis**, **PostgreSQL** et **S3** par exemple.
 
-Pour autant je suis complètement à l'aise sur d'autres frameworks et langages comme **Golang**, **Node.js** ou **Express** par exemple.
+Pour autant je suis complètement à l'aise sur d'autres frameworks et langages comme **Golang**, **Node.js** ou encore **Express**.
 
 Avec un pied dans l'**Ops** pendant 2 ans, j'ai principalement travaillé avec le cloud d'**AWS**, la suite **Hashicorp** (Terraform, Packer, Vagrant, Vault) et **Ansible** pour la partie Infrastructure As Code,
 **Prometheus** et **Grafana** pour le monitoring, **Apache Mesos** et **Kubernetes** pour l'orchestration.

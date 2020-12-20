@@ -45,7 +45,7 @@ jobs:
       - name: Generate
         run: yarn run generate
 
-      - name: rclone
+      - name: Deploy
         uses: wei/rclone@v1
         env:
           RCLONE_CONFIG_MYS3_ENDPOINT: ${{ secrets.RCLONE_CONFIG_MYS3_ENDPOINT }}
@@ -91,5 +91,8 @@ jobs:
       - name: Generate
         run: yarn run generate
 
-      - name: Push dist folder
-        run: yarn run gh-pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist

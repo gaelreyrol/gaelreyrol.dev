@@ -1,3 +1,6 @@
+---
+title: À propos
+---
 ### À propos
 
 Je suis actuellement en charge du développement Web chez [Dans Ma Culotte](https://dansmaculotte.com) en télétravail à [Lille](https://www.openstreetmap.org/relation/58404). 

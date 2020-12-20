@@ -1,14 +1,37 @@
+const metaTitle = 'Gaël Reyrol'
+const metaDescription =
+  'Je suis développeur autodidacte, passionné de web principalement'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Gaël Reyrol',
+    title: metaTitle,
+    titleTemplate: `%s - ${metaTitle}`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: metaDescription
+      },
+      // Open Graph
+      { hid: 'og:title', property: 'og:title', content: metaTitle },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: metaDescription
+      },
+      // Twitter Card
+      { hid: 'twitter:title', name: 'twitter:title', content: metaTitle },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: metaDescription
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },

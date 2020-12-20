@@ -89,7 +89,7 @@ jobs:
         run: yarn
 
       - name: Install push-dir
-        run: yarn add -g push-dir
+        run: yarn global add push-dir
 
       - name: Generate
         run: yarn run generate

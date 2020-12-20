@@ -36,7 +36,7 @@
     <Nuxt class="px-4 pb-16" />
     <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">
       Fait avec <strong>Nuxt.js</strong> & <strong>Tailwind CSS</strong> /
-      Hébergé par <strong>Clever Cloud</strong>
+      Hébergé par <strong>Github</strong>
     </footer>
   </div>
 </template>

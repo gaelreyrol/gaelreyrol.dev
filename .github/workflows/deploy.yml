@@ -1,4 +1,4 @@
-name: ci
+name: Deploy
 
 on:
   push:
@@ -10,7 +10,6 @@ on:
 
 jobs:
   clever-cloud:
-    needs: lint
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -57,7 +56,6 @@ jobs:
           args: sync ./dist mys3:gaelreyrol.dev --progress --s3-acl=public-read
 
   github-pages:
-    needs: lint
     runs-on: ${{ matrix.os }}
 
     strategy:

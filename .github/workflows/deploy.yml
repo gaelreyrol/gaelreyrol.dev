@@ -88,11 +88,8 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Install push-dir
-        run: yarn global add push-dir
-
       - name: Generate
         run: yarn run generate
 
       - name: Push dist folder
-        run: push-dir --dir=dist --branch=gh-pages --cleanup
+        run: yarn run gh-pages

@@ -10,8 +10,8 @@ Utiliser l'option de **build** `--target web` me permet de directement importer 
 Vous pouvez retrouver les sources de ce projet [ici](https://github.com/gaelreyrol/game-of-life-wasm).
 
 <iframe
-src="https://gaelreyrol.github.io/game-of-life-wasm"
-class="overflow-hidden"
-width="750"
-height="750"
+  src="https://gaelreyrol.github.io/game-of-life-wasm"
+  class="overflow-hidden"
+  width="750"
+  height="750"
 />

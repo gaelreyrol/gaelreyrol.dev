@@ -6,10 +6,19 @@ const createSitemapRoutes = async () => {
   const { $content } = require('@nuxt/content')
   const pages = await $content()
     .where({ slug: { $ne: 'index' } })
-    .only(['slug'])
+    .only(['path', 'updatedAt'])
     .fetch()
 
-  return pages.map((page) => page.slug)
+  const projects = await $content('projects')
+    .only(['path', 'updatedAt'])
+    .fetch()
+
+  const routes = pages.concat(projects)
+
+  return routes.map((route) => ({
+    url: route.path,
+    lastmod: route.updatedAt
+  }))
 }
 
 export default {
@@ -79,7 +88,6 @@ export default {
 
   sitemap: {
     hostname: 'https://gaelreyrol.dev',
-    gzip: true,
     routes: createSitemapRoutes
   },
 

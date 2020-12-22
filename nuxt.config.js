@@ -2,6 +2,16 @@ const metaTitle = 'Gaël Reyrol'
 const metaDescription =
   'Je suis développeur autodidacte, passionné de web principalement'
 
+const createSitemapRoutes = async () => {
+  const { $content } = require('@nuxt/content')
+  const pages = await $content()
+    .where({ slug: { $ne: 'index' } })
+    .only(['slug'])
+    .fetch()
+
+  return pages.map((page) => page.slug)
+}
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -60,11 +70,18 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  sitemap: {
+    hostname: 'https://gaelreyrol.dev',
+    gzip: true,
+    routes: createSitemapRoutes
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},

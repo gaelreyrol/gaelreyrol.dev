@@ -1,9 +1,11 @@
 ---
 title: Game of Life
+description: Project pédagogique pour apprendre le Rust et le Web Assembly
+tags: rust, webassembly
 ---
 ### Game of Life
 
-Ce projet basé sur [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) est écrit en **Rust** et compilé en **WebAssembly** avec les outils [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen) et [wasm-pack](https://github.com/rustwasm/wasm-pack).
+Ce projet pédagogique basé sur [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) est écrit en **Rust** et compilé en **WebAssembly** avec les outils [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen) et [wasm-pack](https://github.com/rustwasm/wasm-pack).
 
 Utiliser l'option de **build** `--target web` me permet de directement importer le fichier wasm dans un module javascript sans utiliser de bundler.
 

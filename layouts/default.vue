@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header
+    <nav
       class="p-8 flex flex-col items-center space-y-2 sm:space-x-8 sm:space-y-0 sm:flex-row"
     >
       <NuxtLink to="/" active-class="bg-gray-900 p-px rounded-full">
@@ -24,6 +24,13 @@
       >
         Ma stack
       </NuxtLink>
+      <NuxtLink
+        to="/projects"
+        active-class="underline"
+        class="font-medium text-sm sm:text-md lg:text-xl"
+      >
+        Mes projets
+      </NuxtLink>
       <a
         class="text-sm sm:text-md lg:text-xl"
         href="https://onestla.tech/"
@@ -32,7 +39,7 @@
       >
         #OnEstLaTech
       </a>
-    </header>
+    </nav>
     <Nuxt class="px-4 pb-16" />
     <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">
       Fait avec <strong>Nuxt.js</strong> & <strong>Tailwind CSS</strong> /

@@ -2,7 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
     "name": "Gaël Reyrol",
-    "picture": "https://avataaar.welovedevs.com/png/?accessoriesType=Blank&clotheColor=W3D&clotheType=GraphicShirt&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=BrownDark&mouthType=Smile&skinColor=Light&topType=ShortHairShortFlat&graphicType=W3DLogo",
+    "picture": "https://gaelreyrol.dev/_nuxt/static/avatar.jpeg",
+    "email": "me@gaelreyrol.dev",
     "label": "Développeur Fullstack & Ops",
     "url": "https://gaelreyrol.dev",
     "location": {
@@ -38,11 +39,11 @@
     {
       "name": "Clever Cloud",
       "description": "Clever Cloud is an IT Automation company focused on developer productivity and hosting quality.",
-      "position": "Engénieur Support",
+      "position": "Ingénieur Support",
       "startDate": "2021-03-01",
       "summary": "Responsable du support technique de niveau 1",
       "location": "Lille, France",
-      "url": "https://www.clever-cloud.com/"
+      "url": "https://www.clever-cloud.com"
 
     },
     {
@@ -50,6 +51,7 @@
       "description": "Dans Ma Culotte démocratise auprès de tout·e·s l'accès à une large variété de produits menstruels sains et responsables.",
       "position": "Responsable du développement Web",
       "startDate": "2018-10-01",
+      "endDate": "2021-02-27",
       "summary": "Création de la boutique en ligne et de l'interface logistique (Laravel, Nuxt.js), amélioration continue, déploiement continu, organisation de l'équipe de développement.",
       "location": "Caen, France",
       "url": "https://dansmaculotte.com"
@@ -62,7 +64,7 @@
       "endDate": "2018-10-01",
       "summary": "Mise en place de l'infrastructure interne et externe des services (Jenkins, Docker, Kubernetes, AWS, Terraform, Vagrant, Packer, ESXi), développement d'une plateforme Big Data type Lambda (Mesos, Marathon, Kafka, Spark).",
       "location": "Caen, France",
-      "url": "https://soyhuce.fr/"
+      "url": "https://soyhuce.fr"
     },
     {
       "name": "ÉCOLE BRASSART",
@@ -88,52 +90,94 @@
       "institution": "École 42 - Paris",
       "area": "Programmation informatique",
       "studyType": "Degree",
-      "url": "https://42.fr/",
+      "url": "https://42.fr",
       "startDate": "2013-09-01",
       "endDate": "2016-01-01"
     }
   ],
   "skills": [
     {
-      "name": "PHP",
-      "level": "expert",
+      "name": "Backend",
       "keywords": [
-        "laravel",
-        "symfony",
-        "doctrine",
-        "phpunit",
-        "composer"
+        "Laravel",
+        "Symfony",
+        "Golang",
+        "Node.js"
       ]
     },
     {
-      "name": "Go",
-      "level": "intermediate",
+      "name": "Frontend",
       "keywords": [
-        "gorilla",
-        "gorm",
-        "modules"
+        "Nuxt.js",
+        "Vue.js",
+        "Javascript",
+        "Webpack",
+        "PostCSS",
+        "Tailwindcss",
+        "Storybook"
       ]
     },
     {
-      "name": "Node.js",
-      "level": "intermediate",
+      "name": "Testing",
       "keywords": [
-        "express",
-        "knex.js",
-        "objection.js"
+        "Phpunit",
+        "Jest",
+        "Cypress"
       ]
     },
     {
-      "name": "PostgreSQL",
-      "level": "intermediate"
+      "name": "Database",
+      "keywords": [
+        "PostgreSQL",
+        "MySQL",
+        "Redis"
+      ]
     },
     {
-      "name": "Terraform",
-      "level": "intermediate"
+      "name": "Message",
+      "keywords": [
+        "RabbitMQ",
+        "Apache Pulsar"
+      ]
     },
     {
-      "name": "Ansible",
-      "level": "intermediate"
+      "name": "Storage",
+      "keywords": [
+        "S3"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "keywords": [
+        "Terraform",
+        "Ansible",
+        "Packer",
+        "Vagrant",
+        "Docker",
+        "Apache Mesos",
+        "Nomad",
+        "Consul",
+        "Prometheus",
+        "Grafana",
+        "Vault",
+        "Traefik"
+      ]
+    },
+    {
+      "name": "Cloud",
+      "keywords": [
+        "Clever Cloud",
+        "Cloudflare",
+        "AWS"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "keywords": [
+        "Github Actions",
+        "Gitlab CI",
+        "Jenkins"
+      ]
     }
   ],
   "languages": [
@@ -148,7 +192,12 @@
   ],
   "interests": [
     {
-      "name": "Roller Derby"
+      "name": "Roller Derby",
+      "keywords": [
+        "Jammer",
+        "Coach",
+        "Referee"
+      ]
     },
     {
       "name": "Humanitaire"

@@ -11,4 +11,6 @@ Vous pouvez me retrouver à différents endroits :
 - [WeLoveDev](https://gaelreyrol.welovedevs.com)
 - [Keybase](https://keybase.io/zevran)
 
-Et me contacter à l'adresse suivante : [me@gaelreyrol.dev](mailto:me@gaelreyrol.dev)
+Me contacter à l'adresse suivante : [me@gaelreyrol.dev](mailto:me@gaelreyrol.dev)
+
+Et télécharger mon curriculum vitae (au format [JSON Resume](https://jsonresume.org/)) <a href="/static/resume.json">ici</a>.

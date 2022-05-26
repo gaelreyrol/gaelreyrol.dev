@@ -18,13 +18,6 @@
         À propos
       </NuxtLink>
       <NuxtLink
-        to="/stack"
-        active-class="underline"
-        class="font-medium text-sm sm:text-md lg:text-xl"
-      >
-        Ma stack
-      </NuxtLink>
-      <NuxtLink
         to="/projects"
         active-class="underline"
         class="font-medium text-sm sm:text-md lg:text-xl"

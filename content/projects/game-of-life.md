@@ -1,6 +1,6 @@
 ---
 title: Game of Life
-description: Project pédagogique pour apprendre le Rust et le Web Assembly
+description: Project pédagogique pour m'initier au Web Assembly
 tags:
 - rust
 - webassembly

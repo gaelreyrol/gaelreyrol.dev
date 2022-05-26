@@ -4,7 +4,7 @@
     <div
       v-for="(project, index) in projects"
       :key="index"
-      class="flex flex-col space-y-1 border rounded-md p-4"
+      class="flex flex-col space-y-1 border rounded-md p-4 mb-4"
     >
       <div
         class="flex flex-col sm:flex-row items-start space-y-2 sm:space-y-0 sm:space-x-2 sm:items-center"
@@ -16,7 +16,7 @@
         {{ project.description }}
       </span>
       <span class="block text-xs text-right sm:text-left sm:text-sm italic">
-        Démarré le {{ formatDate(project.createdAt) }}
+        Démarré le {{ formatDate(project.date || project.createdAt) }}
       </span>
     </div>
   </div>

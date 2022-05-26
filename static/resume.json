@@ -1,0 +1,172 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Gaël Reyrol",
+    "picture": "https://avataaar.welovedevs.com/png/?accessoriesType=Blank&clotheColor=W3D&clotheType=GraphicShirt&eyeType=Happy&eyebrowType=Default&facialHairType=Blank&hairColor=BrownDark&mouthType=Smile&skinColor=Light&topType=ShortHairShortFlat&graphicType=W3DLogo",
+    "label": "Développeur Fullstack & Ops",
+    "url": "https://gaelreyrol.dev",
+    "location": {
+      "locationCountryCode": "FR",
+      "postalCode": "59000",
+      "city": "Lille",
+      "region": "Nord"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "GaelReyrol",
+        "url": "https://twitter.com/GaelReyrol"
+      },
+      {
+        "network": "Github",
+        "username": "gaelreyrol",
+        "url": "https://github.com/gaelreyrol"
+      },
+      {
+        "network": "Gitlab",
+        "username": "GaelReyrol",
+        "url": "https://gitlab.com/GaelReyrol"
+      },
+      {
+        "network": "Linkedin",
+        "username": "gaelreyrol",
+        "url": "https://linkedin.com/in/gaelreyrol"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Clever Cloud",
+      "description": "Clever Cloud is an IT Automation company focused on developer productivity and hosting quality.",
+      "position": "Engénieur Support",
+      "startDate": "2021-03-01",
+      "summary": "Responsable du support technique de niveau 1",
+      "location": "Lille, France",
+      "url": "https://www.clever-cloud.com/"
+
+    },
+    {
+      "name": "Marie-Noëlle / Dans Ma Culotte",
+      "description": "Dans Ma Culotte démocratise auprès de tout·e·s l'accès à une large variété de produits menstruels sains et responsables.",
+      "position": "Responsable du développement Web",
+      "startDate": "2018-10-01",
+      "summary": "Création de la boutique en ligne et de l'interface logistique (Laravel, Nuxt.js), amélioration continue, déploiement continu, organisation de l'équipe de développement.",
+      "location": "Caen, France",
+      "url": "https://dansmaculotte.com"
+    },
+    {
+      "name": "SoyHuCe",
+      "description": "Conseil, accompagnement en transformation digitale, laboratoire R&D en algorithmie et datascience, déploiement d'architectures et édition de logiciels.",
+      "position": "Développeur Fullstack & DevOps",
+      "startDate": "2016-01-01",
+      "endDate": "2018-10-01",
+      "summary": "Mise en place de l'infrastructure interne et externe des services (Jenkins, Docker, Kubernetes, AWS, Terraform, Vagrant, Packer, ESXi), développement d'une plateforme Big Data type Lambda (Mesos, Marathon, Kafka, Spark).",
+      "location": "Caen, France",
+      "url": "https://soyhuce.fr/"
+    },
+    {
+      "name": "ÉCOLE BRASSART",
+      "position": "Formateur",
+      "startDate": "2016-01-01",
+      "endDate": "2016-12-01",
+      "summary": "Formation sur la spécialité Web pour les élèves de 2ème année.",
+      "location": "Caen, France",
+      "url": "https://www.brassart.fr/campus/ecole-caen"
+    },
+    {
+      "name": "Makeidea",
+      "description": "Plateforme de partage de modèle 3D à imprimer. RIP",
+      "position": "Président",
+      "startDate": "2014-06-01",
+      "endDate": "2016-04-01",
+      "location": "Caen, France",
+      "url": "https://makeidea.io"
+    }
+  ],
+  "education": [
+    {
+      "institution": "École 42 - Paris",
+      "area": "Programmation informatique",
+      "studyType": "Degree",
+      "url": "https://42.fr/",
+      "startDate": "2013-09-01",
+      "endDate": "2016-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "PHP",
+      "level": "expert",
+      "keywords": [
+        "laravel",
+        "symfony",
+        "doctrine",
+        "phpunit",
+        "composer"
+      ]
+    },
+    {
+      "name": "Go",
+      "level": "intermediate",
+      "keywords": [
+        "gorilla",
+        "gorm",
+        "modules"
+      ]
+    },
+    {
+      "name": "Node.js",
+      "level": "intermediate",
+      "keywords": [
+        "express",
+        "knex.js",
+        "objection.js"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "intermediate"
+    },
+    {
+      "name": "Terraform",
+      "level": "intermediate"
+    },
+    {
+      "name": "Ansible",
+      "level": "intermediate"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Roller Derby"
+    },
+    {
+      "name": "Humanitaire"
+    },
+    {
+      "name": "Comics"
+    }
+  ],
+  "projects": [
+    {
+      "name": "DerbyHouse",
+      "description": "DerbyHouse is a platform offering a dedicated place for Roller Derby events and activities. Its goal is to provide features around the key activities of the sport and ease sharing between communities & leagues. ",
+      "link": "https://derbyhouse.eu",
+      "startDate": "2022-04-06",
+      "type": "application"
+    }
+  ],
+  "meta": {
+    "version": "1.0.0"
+  }
+}

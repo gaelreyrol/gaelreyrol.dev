@@ -52,7 +52,13 @@ export default {
         content: metaDescription
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    htmlAttrs: {
+      class: 'h-full'
+    },
+    bodyAttrs: {
+      class: 'h-full'
+    }
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

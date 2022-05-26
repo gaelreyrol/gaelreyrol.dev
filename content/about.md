@@ -11,7 +11,7 @@ Mon expérience est particulièrement concentrée sur les frameworks Nuxt.js et 
 
 Pour autant je suis complètement à l'aise sur d'autres frameworks et langages comme Golang, Node.js, Express ou encore Symfony.
 
-Avec un pied dans l'Ops pendant 2 ans, j'ai principalement travaillé avec le cloud d'AWS, la suite Hashicorp (Terraform, Packer, Vagrant, Vault, Nomad, Consul) et Ansible pour la partie Infrastructure As Code,
+Pour la partie Ops, j'ai principalement travaillé avec le cloud d'AWS et Clever Cloud, la suite Hashicorp (Terraform, Packer, Vagrant, Vault, Nomad, Consul) et Ansible pour la partie Infrastructure As Code,
 Prometheus et Grafana pour le monitoring, Apache Mesos et Kubernetes pour l'orchestration.
 
 Je suis un grand adepte des principes de l'application 12 facteurs, j'essaye un maximum de travailler avec les bons outils, faire des choix pragmatiques en terme de technologies ou de langages pour arriver au meilleur résultat.

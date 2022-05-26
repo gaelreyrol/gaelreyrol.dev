@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-full">
     <nav
       class="p-8 flex flex-col items-center space-y-2 sm:space-x-8 sm:space-y-0 sm:flex-row"
     >
@@ -41,7 +41,7 @@
         #VotePirate
       </a>
     </nav>
-    <Nuxt class="px-4 pb-16" />
+    <Nuxt class="min-h-screen px-4 pb-16" />
     <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">
       Fait avec <strong>Nuxt.js</strong> & <strong>Tailwind CSS</strong> /
       Hébergé par <strong>Github</strong>

@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex items-center space-x-1">
+  <div class="flex-row items-center space-x-1 space-y-1">
     <Bagde v-for="(tag, index) in value" :key="index" :value="tag" />
   </div>
 </template>

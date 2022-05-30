@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1653900874",layout:"default",error:a,serverRendered:true,routePath:"\u002Fprojects\u002Fgame-of-life",config:{app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"e8b39cff"}}}}(null));

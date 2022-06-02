@@ -42,11 +42,11 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Generate
-        run: yarn run generate
-
       - name: Generate html resume
         run: yarn run resume
+
+      - name: Generate
+        run: yarn run generate
 
       - name: Deploy
         uses: wei/rclone@v1
@@ -91,11 +91,11 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Generate
-        run: yarn run generate
-
       - name: Generate html resume
         run: yarn run resume
+
+      - name: Generate
+        run: yarn run generate
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

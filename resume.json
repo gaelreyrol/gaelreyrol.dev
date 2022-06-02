@@ -41,7 +41,7 @@
       "description": "Clever Cloud is an IT Automation company focused on developer productivity and hosting quality.",
       "position": "Ingénieur Support",
       "startDate": "2021-03-01",
-      "summary": "Responsable du support technique de niveau 1",
+      "summary": "Responsable support technique L1. Maintenance et amélioration continue de la documentation externe & interne. Développement d'outils externes et internes (clevercloud-go, biscuit-php & terraform-provider-clevercloud)",
       "location": "Lille, France",
       "url": "https://www.clever-cloud.com"
 
@@ -100,9 +100,17 @@
       "name": "Backend",
       "keywords": [
         "Laravel",
+        "Eloquent",
         "Symfony",
+        "Doctrine",
         "Golang",
-        "Node.js"
+        "Beego",
+        "Revel",
+        "Gorilla",
+        "Gorm",
+        "Node.js",
+        "Express",
+        "Knex.js"
       ]
     },
     {
@@ -110,11 +118,11 @@
       "keywords": [
         "Nuxt.js",
         "Vue.js",
-        "Javascript",
         "Webpack",
         "PostCSS",
         "Tailwindcss",
-        "Storybook"
+        "Storybook",
+        "Lighthouse"
       ]
     },
     {
@@ -122,7 +130,8 @@
       "keywords": [
         "Phpunit",
         "Jest",
-        "Cypress"
+        "Cypress",
+        "Molecule"
       ]
     },
     {
@@ -156,11 +165,24 @@
         "Docker",
         "Apache Mesos",
         "Nomad",
+        "Kubernetes",
         "Consul",
         "Prometheus",
         "Grafana",
         "Vault",
-        "Traefik"
+        "Wireguard",
+        "Elasticsearch",
+        "Kibana"
+      ]
+    },
+    {
+      "name": "Reverse Proxy",
+      "keywords": [
+        "Traefik",
+        "Nginx",
+        "Apache",
+        "Sozu",
+        "HAProxy"
       ]
     },
     {
@@ -168,7 +190,8 @@
       "keywords": [
         "Clever Cloud",
         "Cloudflare",
-        "AWS"
+        "AWS",
+        "Google App Engine"
       ]
     },
     {
@@ -212,7 +235,13 @@
       "description": "DerbyHouse is a platform offering a dedicated place for Roller Derby events and activities. Its goal is to provide features around the key activities of the sport and ease sharing between communities & leagues. ",
       "link": "https://derbyhouse.eu",
       "startDate": "2022-04-06",
-      "type": "application"
+      "type": "application",
+      "keywords": [
+        "Symfony",
+        "Doctrine",
+        "Tailwindcss",
+        "Clever Cloud"
+      ]
     }
   ],
   "meta": {

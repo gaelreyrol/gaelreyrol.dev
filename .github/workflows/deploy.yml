@@ -45,6 +45,9 @@ jobs:
       - name: Generate
         run: yarn run generate
 
+      - name: Generate html resume
+        run: yarn run resume
+
       - name: Deploy
         uses: wei/rclone@v1
         env:
@@ -90,6 +93,9 @@ jobs:
 
       - name: Generate
         run: yarn run generate
+
+      - name: Generate html resume
+        run: yarn run resume
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

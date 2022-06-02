@@ -13,4 +13,4 @@ Vous pouvez me retrouver à différents endroits :
 
 Me contacter à l'adresse suivante : [me@gaelreyrol.dev](mailto:me@gaelreyrol.dev)
 
-Et télécharger mon curriculum vitae au format <a href="/resume.json" target="_blank">JSON</a>.
+Et télécharger mon curriculum vitae au format <a href="/resume.json" target="_blank">JSON</a> et <a href="/resume.html" target="_blank">HTML</a>.

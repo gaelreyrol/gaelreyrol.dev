@@ -1,9 +1,11 @@
-/*
- ** TailwindCSS Configuration File
- **
- ** Docs: https://tailwindcss.com/docs/configuration
- ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
- */
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  plugins: [require('@tailwindcss/typography')]
+  content: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

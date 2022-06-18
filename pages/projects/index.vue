@@ -10,7 +10,7 @@
         class="flex flex-col sm:flex-row items-start space-y-2 sm:space-y-0 sm:space-x-2 sm:items-center"
       >
         <NuxtLink :to="project.path">{{ project.title }}</NuxtLink>
-        <Tags :value="project.tags" />
+        <TagsItem :value="project.tags" />
       </div>
       <span class="block text-sm sm:text-md md:text-xl">
         {{ project.description }}

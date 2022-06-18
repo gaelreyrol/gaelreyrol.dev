@@ -89,8 +89,17 @@ export default {
     '@nuxtjs/sitemap'
   ],
 
+  // See https://github.com/nuxt-community/tailwindcss-module/issues/480
+  devServerHandlers: [],
+
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  tailwindcss: {
+    config: {
+      content: ['content/**/**.md']
+    }
+  },
 
   sitemap: {
     hostname: 'https://gaelreyrol.dev',

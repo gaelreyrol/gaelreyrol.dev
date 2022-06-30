@@ -32,14 +32,6 @@
       >
         #OnEstLaTech
       </a>
-      <a
-        class="text-sm sm:text-md lg:text-xl"
-        href="https://vote.partipirate.org/"
-        target="_blank"
-        rel="noopener"
-      >
-        #VotePirate
-      </a>
     </nav>
     <Nuxt class="min-h-screen px-4 pb-16" />
     <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">

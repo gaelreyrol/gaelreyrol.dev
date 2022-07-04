@@ -1,103 +1,88 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
-    "name": "Gaël Reyrol",
-    "picture": "https://gaelreyrol.dev/_nuxt/static/avatar.jpeg",
     "email": "me@gaelreyrol.dev",
+    "image": "https://gaelreyrol.dev/_nuxt/static/avatar.jpeg",
     "label": "Développeur Fullstack & Ops",
-    "url": "https://gaelreyrol.dev",
     "location": {
-      "locationCountryCode": "FR",
-      "postalCode": "59000",
       "city": "Lille",
+      "countryCode": "FR",
+      "postalCode": "59000",
       "region": "Nord"
     },
+    "name": "Gaël Reyrol",
     "profiles": [
       {
         "network": "Twitter",
-        "username": "GaelReyrol",
-        "url": "https://twitter.com/GaelReyrol"
+        "url": "https://twitter.com/GaelReyrol",
+        "username": "GaelReyrol"
       },
       {
         "network": "Github",
-        "username": "gaelreyrol",
-        "url": "https://github.com/gaelreyrol"
-      },
-      {
-        "network": "Gitlab",
-        "username": "GaelReyrol",
-        "url": "https://gitlab.com/GaelReyrol"
+        "url": "https://github.com/gaelreyrol",
+        "username": "gaelreyrol"
       },
       {
         "network": "Linkedin",
-        "username": "gaelreyrol",
-        "url": "https://linkedin.com/in/gaelreyrol"
+        "url": "https://linkedin.com/in/gaelreyrol",
+        "username": "gaelreyrol"
       }
-    ]
+    ],
+    "url": "https://gaelreyrol.dev"
   },
-  "work": [
-    {
-      "name": "Clever Cloud",
-      "description": "Clever Cloud is an IT Automation company focused on developer productivity and hosting quality.",
-      "position": "Ingénieur Support",
-      "startDate": "2021-03-01",
-      "summary": "Responsable support technique L1. Maintenance et amélioration continue de la documentation externe & interne. Développement d'outils externes et internes (clevercloud-go, biscuit-php & terraform-provider-clevercloud)",
-      "location": "Lille, France",
-      "url": "https://www.clever-cloud.com"
-
-    },
-    {
-      "name": "Marie-Noëlle / Dans Ma Culotte",
-      "description": "Dans Ma Culotte démocratise auprès de tout·e·s l'accès à une large variété de produits menstruels sains et responsables.",
-      "position": "Responsable du développement Web",
-      "startDate": "2018-10-01",
-      "endDate": "2021-02-27",
-      "summary": "Création de la boutique en ligne et de l'interface logistique (Laravel, Nuxt.js), amélioration continue, déploiement continu, organisation de l'équipe de développement.",
-      "location": "Caen, France",
-      "url": "https://dansmaculotte.com"
-    },
-    {
-      "name": "SoyHuCe",
-      "description": "Conseil, accompagnement en transformation digitale, laboratoire R&D en algorithmie et datascience, déploiement d'architectures et édition de logiciels.",
-      "position": "Développeur Fullstack & DevOps",
-      "startDate": "2016-01-01",
-      "endDate": "2018-10-01",
-      "summary": "Mise en place de l'infrastructure interne et externe des services (Jenkins, Docker, Kubernetes, AWS, Terraform, Vagrant, Packer, ESXi), développement d'une plateforme Big Data type Lambda (Mesos, Marathon, Kafka, Spark).",
-      "location": "Caen, France",
-      "url": "https://soyhuce.fr"
-    },
-    {
-      "name": "ÉCOLE BRASSART",
-      "position": "Formateur",
-      "startDate": "2016-01-01",
-      "endDate": "2016-12-01",
-      "summary": "Formation sur la spécialité Web pour les élèves de 2ème année.",
-      "location": "Caen, France",
-      "url": "https://www.brassart.fr/campus/ecole-caen"
-    },
-    {
-      "name": "Makeidea",
-      "description": "Plateforme de partage de modèle 3D à imprimer. RIP",
-      "position": "Président",
-      "startDate": "2014-06-01",
-      "endDate": "2016-04-01",
-      "location": "Caen, France",
-      "url": "https://makeidea.io"
-    }
-  ],
   "education": [
     {
-      "institution": "École 42 - Paris",
       "area": "Programmation informatique",
+      "courses": [
+        "Algorithmie",
+        "Web",
+        "Unix"
+      ],
+      "endDate": "2016-01",
+      "institution": "École 42 - Paris",
+      "startDate": "2013-09",
       "studyType": "Degree",
-      "url": "https://42.fr",
-      "startDate": "2013-09-01",
-      "endDate": "2016-01-01"
+      "url": "https://42.fr"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Roller Derby"
+    },
+    {
+      "name": "Humanitaire"
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native",
+      "language": "Français"
+    },
+    {
+      "fluency": "Fluent",
+      "language": "English"
+    }
+  ],
+  "projects": [
+    {
+      "description": "DerbyHouse is a platform offering a dedicated place for Roller Derby events and activities. Its goal is to provide features around the key activities of the sport and ease sharing between communities & leagues",
+      "keywords": [
+        "Symfony",
+        "ApiPlatform",
+        "PHPUnit",
+        "Doctrine",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Clever Cloud",
+        "DDD"
+      ],
+      "name": "DerbyHouse",
+      "startDate": "2022-04",
+      "type": "application",
+      "url": "https://derbyhouse.eu"
     }
   ],
   "skills": [
     {
-      "name": "Backend",
       "keywords": [
         "Laravel",
         "Eloquent",
@@ -111,10 +96,10 @@
         "Node.js",
         "Express",
         "Knex.js"
-      ]
+      ],
+      "name": "Backend"
     },
     {
-      "name": "Frontend",
       "keywords": [
         "Nuxt.js",
         "Vue.js",
@@ -123,40 +108,43 @@
         "Tailwindcss",
         "Storybook",
         "Lighthouse"
-      ]
+      ],
+      "name": "Frontend"
     },
     {
-      "name": "Testing",
       "keywords": [
         "Phpunit",
         "Jest",
         "Cypress",
+        "Percy",
         "Molecule"
-      ]
+      ],
+      "name": "Testing"
     },
     {
-      "name": "Database",
       "keywords": [
         "PostgreSQL",
         "MySQL",
         "Redis"
-      ]
+      ],
+      "name": "Database"
     },
     {
-      "name": "Message",
       "keywords": [
+        "Kafka",
         "RabbitMQ",
         "Apache Pulsar"
-      ]
+      ],
+      "name": "Message Queue"
     },
     {
-      "name": "Storage",
       "keywords": [
-        "S3"
-      ]
+        "S3",
+        "FTP"
+      ],
+      "name": "Storage"
     },
     {
-      "name": "DevOps",
       "keywords": [
         "Terraform",
         "Ansible",
@@ -173,78 +161,235 @@
         "Wireguard",
         "Elasticsearch",
         "Kibana"
-      ]
+      ],
+      "name": "Ops"
     },
     {
-      "name": "Reverse Proxy",
       "keywords": [
         "Traefik",
         "Nginx",
         "Apache",
         "Sozu",
         "HAProxy"
-      ]
+      ],
+      "name": "Reverse Proxy"
     },
     {
-      "name": "Cloud",
       "keywords": [
         "Clever Cloud",
         "Cloudflare",
         "AWS",
         "Google App Engine"
-      ]
+      ],
+      "name": "Cloud"
     },
     {
-      "name": "CI/CD",
       "keywords": [
         "Github Actions",
         "Gitlab CI",
         "Jenkins"
-      ]
+      ],
+      "name": "Automation"
     }
   ],
-  "languages": [
+  "work": [
     {
-      "language": "Français",
-      "fluency": "Native"
+      "description": "Clever Cloud is an IT Automation company focused on developer productivity and hosting quality.",
+      "endDate": "2022-07",
+      "highlights": [
+        "Responsable support de niveau 1",
+        "Construction d'un outil d'analyse et de rapport d'activité de l'équipe support",
+        "Maintenance et amélioration de la documentation externe & interne et contribuer",
+        "Développement d'outils externe et interne (CLI, Provider Terraform, SDK)"
+      ],
+      "location": "Lille, France",
+      "name": "Clever Cloud",
+      "position": "Ingénieur Support",
+      "salaries": [
+        {
+          "amount": 2350,
+          "currency": "EUR",
+          "per": "year",
+          "startDate": "2021-03"
+        },
+        {
+          "amount": 2750,
+          "currency": "EUR",
+          "per": "year",
+          "startDate": "2021-07"
+        }
+      ],
+      "skills": [
+        "Golang",
+        "Node.js",
+        "Express",
+        "Knex.js",
+        "PostgreSQL",
+        "Terraform",
+        "Apache Pulsar",
+        "Elasticsearch",
+        "Kibana",
+        "Wireguard",
+        "Jenkins",
+        "Nginx",
+        "Apache HTTP",
+        "Sozu",
+        "HAProxy"
+      ],
+      "startDate": "2021-03",
+      "summary": "Contribuer à l'amélioration de la productivité des développeurs et de la qualité des environnements d'exécution",
+      "url": "https://www.clever-cloud.com"
     },
     {
-      "language": "English",
-      "fluency": "Fluent"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Roller Derby",
-      "keywords": [
-        "Jammer",
-        "Coach",
-        "Referee"
-      ]
+      "description": "Dans Ma Culotte démocratise auprès de tout·e·s l'accès à une large variété de produits menstruels sains et responsables.",
+      "endDate": "2021-02",
+      "highlights": [
+        "Création de la boutique en ligne, de son interface logistique, du suivi de commandes, de la facturation et de la plateforme de gestion de contenu",
+        "Mise en place de l'amélioration et du déploiement des livrables",
+        "Surveillance et amélioration des performances liées au SEO",
+        "Organisation et management de l'équipe de développement en relation avec le PO via la méthodologie Agile (Scrum)"
+      ],
+      "location": "Caen, France",
+      "name": "Dans Ma Culotte",
+      "position": "Responsable du développement Web",
+      "salaries": [
+        {
+          "amount": 2250,
+          "currency": "EUR",
+          "per": "year",
+          "startDate": "2018-10"
+        },
+        {
+          "amount": 2600,
+          "currency": "EUR",
+          "per": "year",
+          "startDate": "2020-07"
+        }
+      ],
+      "skills": [
+        "DDD",
+        "TDD",
+        "Laravel",
+        "Eloquent",
+        "PHPUnit",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ",
+        "S3",
+        "Vue.js",
+        "PostCSS",
+        "TailwindCSS",
+        "Webpack",
+        "Storybook",
+        "Lighthouse",
+        "Jest",
+        "Cypress",
+        "Percy",
+        "Gitlab CI",
+        "Clever Cloud",
+        "Cloudflare",
+        "Sentry"
+      ],
+      "startDate": "2018-10",
+      "summary": "Création d'une plateforme digitale de vente",
+      "url": "https://dansmaculotte.com"
     },
     {
-      "name": "Humanitaire"
+      "description": "Conseil, accompagnement en transformation digitale, laboratoire R&D en algorithmie et datascience, déploiement d'architectures et édition de logiciels.",
+      "endDate": "2018-10",
+      "highlights": [
+        "Mise en place de l'infratructure interne et externe des services délivrés",
+        "Développement d'une plateforme Big Data type Lambda"
+      ],
+      "location": "Caen, France",
+      "name": "SoyHuCe",
+      "position": "Développeur Fullstack & DevOps",
+      "salaries": [
+        {
+          "amount": 1950,
+          "currency": "EUR",
+          "per": "year",
+          "startDate": "2016-01"
+        },
+        {
+          "amount": 2050,
+          "currency": "EUR",
+          "per": "year",
+          "startDate": "2017-10"
+        },
+        {
+          "amount": 2400,
+          "currency": "EUR",
+          "per": "year",
+          "startDate": "2018-05"
+        }
+      ],
+      "skills": [
+        "Jenkins",
+        "Docker",
+        "Kubernetes",
+        "Traefik",
+        "Nginx",
+        "Apache HTTP",
+        "Grafana",
+        "Prometheus",
+        "Amazon Web Service",
+        "Cloudflare",
+        "Terraform",
+        "Ansible",
+        "Molecule",
+        "Testinfra",
+        "Vagrant",
+        "Vault",
+        "ESXi",
+        "Apache Mesos",
+        "Marathon",
+        "Kafka",
+        "Spark",
+        "Golang",
+        "Gorilla",
+        "Gorm",
+        "MySQL",
+        "PostgreSQL",
+        "React",
+        "Redux",
+        "Vue.js",
+        "Nuxt.js",
+        "Sass",
+        "BEM",
+        "Webpack"
+      ],
+      "startDate": "2016-01",
+      "summary": "Contribuer à la création et à l'amélioration des outils à disposition des collaborateurs pour développer et déployer les services",
+      "url": "https://soyhuce.fr"
     },
     {
-      "name": "Comics"
-    }
-  ],
-  "projects": [
+      "description": "L'école Brassart est une école privée française d'arts graphiques",
+      "endDate": "2016-12",
+      "location": "Caen, France",
+      "name": "École Brassart",
+      "position": "Formateur Web",
+      "startDate": "2016-01",
+      "summary": "Formation sur la spécialité Web pour les élèves de 2ème année",
+      "url": "https://www.brassart.fr/campus/ecole-caen"
+    },
     {
-      "name": "DerbyHouse",
-      "description": "DerbyHouse is a platform offering a dedicated place for Roller Derby events and activities. Its goal is to provide features around the key activities of the sport and ease sharing between communities & leagues. ",
-      "link": "https://derbyhouse.eu",
-      "startDate": "2022-04-06",
-      "type": "application",
-      "keywords": [
-        "Symfony",
-        "Doctrine",
-        "Tailwindcss",
-        "Clever Cloud"
-      ]
+      "description": "Plateforme de partage de modèle 3D à imprimer. RIP",
+      "endDate": "2016-12",
+      "location": "Caen, France",
+      "name": "Makeidea",
+      "position": "Foundateur",
+      "skills": [
+        "Golang",
+        "Beego",
+        "AngularJS",
+        "OSG.JS",
+        "MySQL",
+        "Google App Engine",
+        "Google Cloud Storage"
+      ],
+      "startDate": "2016-01",
+      "summary": "Gestion et développement du projet"
     }
-  ],
-  "meta": {
-    "version": "1.0.0"
-  }
+  ]
 }

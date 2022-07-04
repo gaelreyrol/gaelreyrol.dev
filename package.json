@@ -13,7 +13,9 @@
     "lint": "yarn lint:js && yarn lint:style",
     "test": "jest",
     "gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "resume": "cat static/resume.json | jsonresume-theme-even > static/resume.html"
+    "resume:json": "dhall-to-json --file dhall/resume.dhall --output static/resume.json",
+    "resume:html": "cat static/resume.json | jsonresume-theme-even > static/resume.html",
+    "resume": "yarn resume:json && yarn resume:html"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",

@@ -90,5 +90,6 @@ sw.*
 *.swp
 
 # Resume JSON
+resume.json
 resume.html
 resume.pdf

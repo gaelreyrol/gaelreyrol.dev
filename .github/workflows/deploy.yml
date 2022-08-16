@@ -9,58 +9,6 @@ on:
       - main
 
 jobs:
-  clever-cloud:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [14]
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Setup node env
-        uses: actions/setup-node@v2.1.2
-        with:
-          node-version: ${{ matrix.node }}
-
-      - name: Setup dhall env
-        uses: dhall-lang/setup-dhall@v4
-
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache node_modules
-        uses: actions/cache@v2
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
-      - name: Install dependencies
-        run: yarn
-
-      - name: Generate html resume
-        run: yarn run resume
-
-      - name: Generate
-        run: yarn run generate
-
-      - name: Deploy
-        uses: wei/rclone@v1
-        env:
-          RCLONE_CONFIG_MYS3_ENDPOINT: ${{ secrets.RCLONE_CONFIG_MYS3_ENDPOINT }}
-          RCLONE_CONFIG_MYS3_ACCESS_KEY_ID: ${{ secrets.RCLONE_CONFIG_MYS3_ACCESS_KEY_ID }}
-          RCLONE_CONFIG_MYS3_SECRET_ACCESS_KEY: ${{ secrets.RCLONE_CONFIG_MYS3_SECRET_ACCESS_KEY }}
-          RCLONE_CONFIG_MYS3_TYPE: ${{ secrets.RCLONE_CONFIG_MYS3_TYPE }}
-        with:
-          args: sync ./dist mys3:gaelreyrol.dev --progress --s3-acl=public-read
-
   github-pages:
     runs-on: ${{ matrix.os }}
 
@@ -80,6 +28,8 @@ jobs:
 
       - name: Setup dhall env
         uses: dhall-lang/setup-dhall@v4
+        with:
+          version: '1.40.2'
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path

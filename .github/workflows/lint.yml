@@ -22,6 +22,8 @@ jobs:
 
       - name: Setup dhall env
         uses: dhall-lang/setup-dhall@v4
+        with:
+          version: '1.40.2'
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path

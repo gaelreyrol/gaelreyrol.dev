@@ -194,6 +194,28 @@
   ],
   "work": [
     {
+      "description": "KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké.",
+      "location": "Lille, France",
+      "name": "KaraFun Group",
+      "position": "Développeur Backend",
+      "salaries": [
+        {
+          "amount": 2750,
+          "currency": "EUR",
+          "per": "month",
+          "startDate": "2022-08"
+        }
+      ],
+      "skills": [
+        "PHP",
+        "MySQL",
+        "Vue.js"
+      ],
+      "startDate": "2021-08",
+      "summary": "Maintenir et améliorer les services et APIs de l'ensemble du groupe.",
+      "url": "https://www.karafun-group.com"
+    },
+    {
       "description": "Clever Cloud is an IT Automation company focused on developer productivity and hosting quality.",
       "endDate": "2022-07",
       "highlights": [

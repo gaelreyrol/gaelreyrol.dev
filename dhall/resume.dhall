@@ -37,6 +37,25 @@ in  Resume.Basic::{
       }
     , work = Some
       [ Resume.Work::{
+        , name = Some "KaraFun Group"
+        , description = Some
+            "KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké."
+        , url = Some "https://www.karafun-group.com"
+        , position = Some "Développeur Backend"
+        , summary = Some
+            "Maintenir et améliorer les services et APIs de l'ensemble du groupe."
+        , skills = Some
+          [ "PHP"
+          , "MySQL"
+          , "Vue.js"
+          ]
+        , location = Some "Lille, France"
+        , startDate = Some "2021-08"
+        , salaries = Some
+          [ Resume.Salary::{ amount = 2750, startDate = Some "2022-08" } // monthly
+          ]
+        },
+        Resume.Work::{
         , name = Some "Clever Cloud"
         , description = Some
             "Clever Cloud is an IT Automation company focused on developer productivity and hosting quality."

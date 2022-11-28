@@ -4,10 +4,9 @@ Je suis développeur autodidacte, passionné, de web principalement, en télétr
 
 Vous pouvez me retrouver à différents endroits :
 
-- [Twitter](https://twitter.com/GaelReyrol)
 - [Github](https://github.com/gaelreyrol)
-- [Gitlab](https://gitlab.com/GaelReyrol)
-- [WeLoveDev](https://gaelreyrol.welovedevs.com)
 - [Keybase](https://keybase.io/zevran)
+- <a rel="me" href="https://mamot.fr/@GaelReyrol">Mastodon</a>
+- [Pixelfed](https://pixelfed.fr/gaelreyrol)
 
 Me contacter à l'adresse suivante : [me@gaelreyrol.dev](mailto:me@gaelreyrol.dev)

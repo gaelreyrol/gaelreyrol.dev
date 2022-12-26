@@ -52,7 +52,7 @@ in  Resume.Basic::{
         , location = Some "Lille, France"
         , startDate = Some "2021-08"
         , salaries = Some
-          [ Resume.Salary::{ amount = 2750, startDate = Some "2022-08" } // monthly
+          [ Resume.Salary::{ amount = 3200, startDate = Some "2022-08" } // monthly
           ]
         },
         Resume.Work::{

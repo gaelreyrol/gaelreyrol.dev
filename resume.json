@@ -12,6 +12,11 @@
     "name": "Gaël Reyrol",
     "profiles": [
       {
+        "network": "Mastodon",
+        "url": "https://mamot.fr/@GaelReyrol",
+        "username": "gaelreyrol@mamot.fr"
+      },
+      {
         "network": "Twitter",
         "url": "https://twitter.com/GaelReyrol",
         "username": "GaelReyrol"
@@ -195,12 +200,13 @@
   "work": [
     {
       "description": "KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké.",
+      "endDate": "2023-01",
       "location": "Lille, France",
       "name": "KaraFun Group",
       "position": "Développeur Backend",
       "salaries": [
         {
-          "amount": 2750,
+          "amount": 3200,
           "currency": "EUR",
           "per": "month",
           "startDate": "2022-08"

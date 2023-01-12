@@ -18,7 +18,13 @@ in  Resume.Basic::{
         , countryCode = Some "FR"
         }
       , profiles = Some
-        [ Resume.Profile::{
+        [
+          Resume.Profile::{
+          , network = Some "Mastodon"
+          , username = Some "gaelreyrol@mamot.fr"
+          , url = Some "https://mamot.fr/@GaelReyrol"
+          }
+        , Resume.Profile::{
           , network = Some "Twitter"
           , username = Some "GaelReyrol"
           , url = Some "https://twitter.com/GaelReyrol"
@@ -51,6 +57,7 @@ in  Resume.Basic::{
           ]
         , location = Some "Lille, France"
         , startDate = Some "2021-08"
+        , endDate = Some "2023-01"
         , salaries = Some
           [ Resume.Salary::{ amount = 3200, startDate = Some "2022-08" } // monthly
           ]

@@ -1,6 +1,6 @@
 ### Salut, je m'appelle Gaël
 
-Je suis développeur autodidacte, passionné, de web principalement, en télétravail à [Lille](https://www.openstreetmap.org/relation/58404).
+Je suis développeur autodidacte, passionné, de web principalement, à [Lille](https://www.openstreetmap.org/relation/58404).
 
 Vous pouvez me retrouver à différents endroits :
 

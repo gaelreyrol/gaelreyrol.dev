@@ -25,11 +25,6 @@ in  Resume.Basic::{
           , url = Some "https://mamot.fr/@GaelReyrol"
           }
         , Resume.Profile::{
-          , network = Some "Twitter"
-          , username = Some "GaelReyrol"
-          , url = Some "https://twitter.com/GaelReyrol"
-          }
-        , Resume.Profile::{
           , network = Some "Github"
           , username = Some "gaelreyrol"
           , url = Some "https://github.com/gaelreyrol"
@@ -47,13 +42,19 @@ in  Resume.Basic::{
         , description = Some
             "KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké."
         , url = Some "https://www.karafun-group.com"
-        , position = Some "Développeur Backend"
+        , position = Some "Développeur Backend PHP"
         , summary = Some
             "Maintenir et améliorer les services et APIs de l'ensemble du groupe."
+        , highlights = Some
+          [ "Intégration d'un modèle d'abonnement multi-plateforme"
+          , "Création d'un client Electron en remplacement d'une application legacy"
+          ]
         , skills = Some
           [ "PHP"
           , "MySQL"
           , "Vue.js"
+          , "TypeScript"
+          , "Electron"
           ]
         , location = Some "Lille, France"
         , startDate = Some "2021-08"
@@ -328,26 +329,8 @@ in  Resume.Basic::{
       ]
     , interests = Some
       [ Resume.Interest::{ name = Some "Roller Derby" }
+      , Resume.Interest::{ name = Some "Harmonica" }
+      , Resume.Interest::{ name = Some "Littérature & Bande dessinées" }
       , Resume.Interest::{ name = Some "Humanitaire" }
-      ]
-    , projects = Some
-      [ Resume.Project::{
-        , name = Some "DerbyHouse"
-        , description = Some
-            "DerbyHouse is a platform offering a dedicated place for Roller Derby events and activities. Its goal is to provide features around the key activities of the sport and ease sharing between communities & leagues"
-        , url = Some "https://derbyhouse.eu"
-        , startDate = Some "2022-04"
-        , type = Some "application"
-        , keywords = Some
-          [ "Symfony"
-          , "ApiPlatform"
-          , "PHPUnit"
-          , "Doctrine"
-          , "PostgreSQL"
-          , "TailwindCSS"
-          , "Clever Cloud"
-          , "DDD"
-          ]
-        }
       ]
     }

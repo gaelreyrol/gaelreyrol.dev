@@ -7,7 +7,7 @@ Je vois régulièrement passer des discussions et débats sur les salaires, pour
 
 Dans tous les cas, il y a rarement un consensus et cela dépend bien évidemment de raisons qui sont propres à chacun·e·s.
 
-Comme le dit très bien [Xe Iaso](https://xeiaso.net) sur sa propre page [Salary Transparency](https://xeiaso.net/salary-transparency), cela peu permettre d'éviter des situations compliquées en entreprise où l'on peut être victime de discriminations et être lésé par des choix managériaux. Ou simplement dans le but d'informer, pour obtenir une rémunération plus juste en fonction des critères que chacun·e jugera pertinents et  développer des arguments dans ce sens.
+Comme le dit très bien [Xe Iaso](https://xeiaso.net) sur sa propre page [Salary Transparency](https://xeiaso.net/salary-transparency), cela peut permettre d'éviter des situations compliquées en entreprise où l'on peut être victime de discriminations et être lésé par des choix managériaux. Ou simplement dans le but d'informer, pour obtenir une rémunération plus juste en fonction des critères que chacun·e jugera pertinents et  développer des arguments dans ce sens.
 
 Déconstruire cela est délicat, on peut avoir le sentiment de se dévoiler et certainement de se dévaloriser. On peut aussi se demander pourquoi, pourquoi cette information me caractérise, pourquoi est-ce un sujet difficile voire tabou dans une société centrée sur le travail où la valeur des individus est étroitement liée à sa productivité. 
 

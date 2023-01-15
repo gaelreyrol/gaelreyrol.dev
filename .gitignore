@@ -93,3 +93,6 @@ sw.*
 resume.json
 resume.html
 resume.pdf
+
+# Direnv
+.direnv

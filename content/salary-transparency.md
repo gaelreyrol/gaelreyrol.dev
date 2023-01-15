@@ -38,7 +38,7 @@ Vous remarquerez que certaines rangées ont une date de début mais pas de date 
 | Dev Fullstack     | 07-2020 | 02-2021 | CDI       | 2600€ / mois |
 | Ingénieur Support | 03-2021 |         | CDI       | 2350€ / mois |
 | Ingénieur Support | 11-2021 | 07-2022 | CDI       | 2750€ / mois |
-| Dev Backend       | 08-2022 |         | CDI       | 3200€ / mois |
+| Dev Backend       | 08-2022 | 01-2023 | CDI       | 3200€ / mois |
 
 Salaire net avant imposition.
 

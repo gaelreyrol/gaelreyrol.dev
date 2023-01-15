@@ -29,6 +29,11 @@ Cette liste n'est pas exhaustive, d'autres critères peuvent s'ajouter en foncti
  - [ ] Télétravail
  - [ ] Horaires flexibles
  - [ ] Impact écologique & social
+ - [ ] Transparence
+    - [ ] Salaires
+    - [ ] Finances
+    - [ ] Management
+    - [ ] Approche [Open Company](https://www.opencompany.org/)
  - [ ] Coopérative
 
 ##### Technique
@@ -37,8 +42,8 @@ Cette liste n'est pas exhaustive, d'autres critères peuvent s'ajouter en foncti
     - [ ] Entretien technique adapté
     - [ ] Test technique adapté
 - [ ] Culture de l'écrit
-    - [ ] Handbook
-    - [ ] Architecture decision records
+    - [ ] [Handbook](https://about.gitlab.com/handbook/)
+    - [ ] [Architecture decision records](https://adr.github.io/)
     - [ ] Échanges asynchrones
 - [ ] Collaboration
     - [ ] Revues de code
@@ -50,7 +55,7 @@ Cette liste n'est pas exhaustive, d'autres critères peuvent s'ajouter en foncti
     - [ ] Conférences
 - [ ] Pratiques de développement
     - [ ] Gestion des versions
-    - [ ] Application 12 facteurs
+    - [ ] [Application 12 facteurs](https://12factor.net/fr/)
     - [ ] Analyses statiques
     - [ ] Test driven development
     - [ ] Behavior driven development

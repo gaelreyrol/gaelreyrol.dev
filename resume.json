@@ -17,11 +17,6 @@
         "username": "gaelreyrol@mamot.fr"
       },
       {
-        "network": "Twitter",
-        "url": "https://twitter.com/GaelReyrol",
-        "username": "GaelReyrol"
-      },
-      {
         "network": "Github",
         "url": "https://github.com/gaelreyrol",
         "username": "gaelreyrol"
@@ -54,6 +49,12 @@
       "name": "Roller Derby"
     },
     {
+      "name": "Harmonica"
+    },
+    {
+      "name": "Littérature & Bande dessinées"
+    },
+    {
       "name": "Humanitaire"
     }
   ],
@@ -65,25 +66,6 @@
     {
       "fluency": "Fluent",
       "language": "English"
-    }
-  ],
-  "projects": [
-    {
-      "description": "DerbyHouse is a platform offering a dedicated place for Roller Derby events and activities. Its goal is to provide features around the key activities of the sport and ease sharing between communities & leagues",
-      "keywords": [
-        "Symfony",
-        "ApiPlatform",
-        "PHPUnit",
-        "Doctrine",
-        "PostgreSQL",
-        "TailwindCSS",
-        "Clever Cloud",
-        "DDD"
-      ],
-      "name": "DerbyHouse",
-      "startDate": "2022-04",
-      "type": "application",
-      "url": "https://derbyhouse.eu"
     }
   ],
   "skills": [
@@ -201,9 +183,13 @@
     {
       "description": "KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké.",
       "endDate": "2023-01",
+      "highlights": [
+        "Intégration d'un modèle d'abonnement multi-plateforme",
+        "Création d'un client Electron en remplacement d'une application legacy"
+      ],
       "location": "Lille, France",
       "name": "KaraFun Group",
-      "position": "Développeur Backend",
+      "position": "Développeur Backend PHP",
       "salaries": [
         {
           "amount": 3200,
@@ -215,7 +201,9 @@
       "skills": [
         "PHP",
         "MySQL",
-        "Vue.js"
+        "Vue.js",
+        "TypeScript",
+        "Electron"
       ],
       "startDate": "2021-08",
       "summary": "Maintenir et améliorer les services et APIs de l'ensemble du groupe.",

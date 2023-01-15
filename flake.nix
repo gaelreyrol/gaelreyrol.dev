@@ -16,8 +16,10 @@
         devShells = {
           default = pkgs.mkShell {
             buildInputs = [
-              pkgs.nodejs-18_x
+              pkgs.python3
+              pkgs.nodejs-16_x
               pkgs.yarn
+              pkgs.dhall-json
             ];
           };
         };

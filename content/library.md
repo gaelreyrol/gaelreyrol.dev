@@ -12,8 +12,8 @@ mais plutôt parce qu'ils me servent d'aide de camp.
 
 Je sais simplement que je peux aller chercher des informations sur à
 peu près tous les sujets auxquels je me retrouve confronté lorsque je programme.
-Bien sûr certains me sont ou ont été plus utiles que d'autres à différent moment de mon
-expérience professionnelle ou personnelle.
+Bien sûr certains me sont ou ont été plus utiles que d'autres à différents moments de mon
+expérience professionnelle et personnelle.
 
 - [Staff Engineer, Will Larson](https://staffeng.com/book)
 - [Crafting Interpreters, Robert Nystrom](https://craftinginterpreters.com/)

@@ -10,4 +10,4 @@ Je suis actuellement à la recherche d'un poste en tant que developpeur PHP à [
 Si vous souhaitez me contacter pour une proposition d'emploi, voici mon <a href="/resume.html" target="_blank">CV</a>.
 Je vous invite aussi à consulter mes [critères de recrutement](/job-standard).
 
-J'ai choisi de rendre publique ma rémunération, vous pouvez consulter ma page sur la [transparence des salaires](/salary-transparency).
+J'ai choisi de rendre publique ma rémunération, vous pouvez la consulter sur ma page : la [transparence des salaires](/salary-transparency).

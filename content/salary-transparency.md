@@ -3,17 +3,32 @@ title: Transparence des salaires
 ---
 ### Transparence des salaires
 
-Je vois régulièrement passer des discussions et débats sur les salaires, pour demander des conseils, donner son avis sur des baromètres, promouvoir la transparence des entreprises, critiquer certaines offres d'emploi ou encore parler de son expérience.
+Je lis régulièrement des discussions et débats sur les salaires,
+pour demander des conseils, donner son avis sur des baromètres,
+promouvoir la transparence des entreprises,
+critiquer certaines offres d'emploi ou encore parler de son expérience.
 
-Dans tous les cas, il y a rarement un consensus et cela dépend bien évidemment de raisons qui sont propres à chacun·e·s.
+Dans tous les cas, il y a rarement un consensus et 
+cela dépend bien évidemment de raisons qui sont propres à chaque personne.
 
-Comme le dit très bien [Xe Iaso](https://xeiaso.net) sur sa propre page [Salary Transparency](https://xeiaso.net/salary-transparency), cela peut permettre d'éviter des situations compliquées en entreprise où l'on peut être victime de discriminations et être lésé par des choix managériaux. Ou simplement dans le but d'informer, pour obtenir une rémunération plus juste en fonction des critères que chacun·e jugera pertinents et  développer des arguments dans ce sens.
+Comme le dit très bien [Xe Iaso](https://xeiaso.net) sur sa propre page
+[Salary Transparency](https://xeiaso.net/salary-transparency), 
+cela peut permettre de se protéger de situations compliquées en entreprise où 
+l'on peut être victime de discriminations et être lésé par des choix managériaux. 
+Mais aussi dans le but d'informer, afin d'obtenir une rémunération plus juste et 
+développer des arguments.
 
-Déconstruire cela est délicat, on peut avoir le sentiment de se dévoiler et certainement de se dévaloriser. On peut aussi se demander pourquoi, pourquoi cette information me caractérise, pourquoi est-ce un sujet difficile voire tabou dans une société centrée sur le travail où la valeur des individus est étroitement liée à sa productivité. 
+On peut avoir le sentiment de s'exposer aux jugements et peut-être de se dévaloriser. 
+Se demander pourquoi cette information nous caractérise,
+pourquoi est-ce un sujet compliqué et tabou dans une société centrée 
+sur le travail où la valeur des personnes est étroitement liée à sa productivité. 
 
-Plutôt que de la communiquer uniquement à des agences, plateformes de recrutement ou potentielles futures entreprises, je fais le choix de la rendre publique parce je pense que nous avons tou·te·s à y gagner collectivement. 
+Plutôt que de communiquer ma rémunération uniquement à des agences, 
+plateformes de recrutement ou potentielles futures entreprises, 
+je fais le choix de la rendre publique parce je pense 
+que nous pouvons y gagner collectivement. 
 
-Vous retrouverez ici quelques liens sur le sujet mais encore une fois, il est difficile de se projeter tant les contextes sont différents :
+Vous retrouverez ici quelques liens sur le sujet :
 
 - [Grille salariale : a voté, Les-Tilleuls.coop](https://les-tilleuls.coop/blog/grille-salariale-a-vote)
 - [Au clair sur les salaires, Alan](https://blog.alan.com/bien-etre-au-travail/au-clair-sur-les-salaires)
@@ -26,7 +41,7 @@ Vous retrouverez ici quelques liens sur le sujet mais encore une fois, il est di
 
 Ce tableau n'inclut pas le nom des entreprises (pour l'instant 😅).
 
-Vous remarquerez que certaines rangées ont une date de début mais pas de date de fin, c'est parce que cela correspond à un changement de situation au sein de l'entreprise (poste, salaire ou statut) ou pour la dernière ligne que cela correspond à mon poste actuel. 
+Certaines lignes n'ont pas de date de fin, cela correspond à un changement de situation au sein de l'entreprise (poste, salaire ou statut) ou pour la dernière ligne cela correspond à mon poste actuel. 
 
 | Poste             | Début   | Fin     | Statut    | Salaire     |
 |-------------------|---------|---------|-----------|--------------|
@@ -40,12 +55,15 @@ Vous remarquerez que certaines rangées ont une date de début mais pas de date 
 | Ingénieur Support | 11-2021 | 07-2022 | CDI       | 2750€ / mois |
 | Dev Backend       | 08-2022 | 01-2023 | CDI       | 3200€ / mois |
 
-Salaire net avant imposition.
+Le salaire est net avant imposition.
 
 #### Notes
 
-J'ai créé une liaison Dhall vers le standard JSON [JSON Resume](https://jsonresume.org/schema/) et j'y ai ajouté une section sur les salaires. Si vous voulez jeter un oeil, ça se passe [ici](https://github.com/gaelreyrol/dhall-resume).
+J'ai créé une liaison Dhall vers le standard JSON [JSON Resume](https://jsonresume.org/schema/)
+et j'y ai ajouté une section sur les salaires. Si vous voulez jeter un oeil, 
+ça se passe [ici](https://github.com/gaelreyrol/dhall-resume).
 
-Je m'interroge sur mon droit d'associer publiquement les salaires perçus aux entreprises. Est-ce que je risque quoique ce soit juridiquement ?
+Je m'interroge sur mon droit d'associer publiquement les salaires perçus aux entreprises.
+Y a-t'il un risque juridique ?
 
 Merci à [Xe Iaso](https://xeiaso.net) de m'avoir fait découvrir cette initiative.

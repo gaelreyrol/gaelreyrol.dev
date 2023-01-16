@@ -11,3 +11,5 @@ Si vous souhaitez me contacter pour une proposition d'emploi, voici mon <a href=
 Je vous invite aussi à consulter mes [critères de recrutement](/job-standard).
 
 J'ai choisi de rendre publique ma rémunération, vous pouvez la consulter sur ma page : la [transparence des salaires](/salary-transparency).
+
+Et [ici](/library) la liste des livres qui constituent ma bibliothèque numérique !

@@ -22,7 +22,7 @@ et chaque série d'entretiens m'aide à affiner mon jugement et mes critères.
 
 J'ai donc créé une liste de cases à cocher qui me permet pendant mes entretiens de 
 construire un aperçu de ce que je considère comme des qualités de l'entreprise 
-et du poste. Cela m'aide à savoir si je suis sur la bonne voie en complétement 
+et du poste. Cela me permet de mieux visualiser l'entreprise et le poste en complétement 
 de mon ressenti et de mes notes.
 
 Cette liste n'est ni exhaustive, ni ordonnée. Par ailleurs d'autres critères peuvent s'ajouter en 
@@ -66,11 +66,13 @@ fonction du poste, de l'entreprise et de mes besoins.
     - [ ] Behavior driven development
     - [ ] Clean code
     - [ ] Contributions open source
+    - [ ] Zero-bug policy
 - [ ] Architecture logicielle
     - [ ] Event sourcing
     - [ ] Domain driven development
     - [ ] Command Query Responsibility Segregation
     - [ ] Clean architecture
+    - [ ] Hexagonal architecture
 - [ ] Tests
     - [ ] Tests unitaires
     - [ ] Tests de bout en bout

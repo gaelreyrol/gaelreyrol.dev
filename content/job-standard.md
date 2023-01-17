@@ -34,10 +34,13 @@ fonction du poste, de l'entreprise et de mes besoins.
 
  - [ ] Télétravail
     - [ ] Bureaux partagés
+    - [ ] Indemnités
  - [ ] Horaires flexibles
  - [ ] Impact écologique & social
  - [ ] Approche [Open Company](https://www.opencompany.org/)
  - [ ] Coopérative
+ - [ ] Épargne salariale
+ - [ ] [Prime de partage de valeur](https://www.service-public.fr/particuliers/vosdroits/F35235)
 
 ##### Technique
 

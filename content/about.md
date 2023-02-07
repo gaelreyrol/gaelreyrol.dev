@@ -1,7 +1,7 @@
 ---
 title: À propos
+description: Petite auto-présentation
 ---
-### À propos
 
 Je suis actuellement à la recherche d'un poste en tant que developpeur PHP à [Lille](https://www.openstreetmap.org/relation/58404) de préférence. 
 

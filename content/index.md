@@ -1,4 +1,10 @@
-### Salut, je m'appelle Gaël
+---
+title: Gaël Reyrol
+description: Bienvenue sur la page d'accueil de mon site personnel
+template_page: "page.html"
+---
+
+Salut, je m'appelle Gaël.
 
 Je suis développeur autodidacte, passionné, de web principalement, à [Lille](https://www.openstreetmap.org/relation/58404).
 

@@ -1,7 +1,7 @@
 ---
 title: Transparence des salaires
+description: Ma vision sur la transparence des salaires
 ---
-### Transparence des salaires
 
 Je lis régulièrement des discussions et débats sur les salaires,
 pour demander des conseils, donner son avis sur des baromètres,

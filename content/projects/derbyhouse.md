@@ -2,14 +2,7 @@
 title: DerbyHouse
 description: Plateforme à destination du Roller Derby
 date: 2022-04-06
-tags:
-- roller derby
-- symfony
-- tailwindcss
-- activitypub
-- fediverse
 ---
-### DerbyHouse
 
 DerbyHouse est une plateforme qui offre une service spécialisé dans les évènements de Roller Derby. L'objectif est de fournir des fonctionnalités adaptées aux particularités du sport et de faciliter les échanges entre les communautées et les ligues.
 

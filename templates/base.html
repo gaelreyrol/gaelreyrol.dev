@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gaël Reyrol</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="{{ config.title }}">
+
+    <meta property="og:title" content="{{ config.title }}">
+    <meta property="og:description" content="{{ config.description }}">
+    
+    <meta name="og:type" property="og:type" content="website">
+    <meta name="og:site_name" property="og:site_name" content="gaelreyrol.dev">
+    
+    <meta name="twitter:title" content="{{ config.title }}">
+    <meta name="twitter:description" content="{{ config.description }}">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="gaelreyrol.dev">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link href="{{ get_url(path="/main.css") }}" rel="stylesheet">
+</head>
+
+<body class="h-full">
+    <nav class="p-8 flex flex-col items-center space-y-2 sm:space-x-8 sm:space-y-0 sm:flex-row">
+        <a href="/">
+            <img
+                class="rounded-full w-12 h-12 sm:h-16 sm:w-16 lg:h-24 lg:w-24 bg-gray-900 p-px rounded-full"
+                src="/avatar.jpeg"
+                alt="Gaël Reyrol"
+            />
+        </a>
+        <a
+            href="{{ get_url(path="@/about.md") }}"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            À propos
+        </a>
+        <a
+            href="{{ get_url(path="@/projects/_index.md") }}"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            Mes projets
+        </a>
+        <a
+            class="text-sm sm:text-md lg:text-xl"
+            href="https://onestla.tech/"
+            target="_blank"
+            rel="noopener"
+        >
+            #OnEstLaTech
+        </a>
+    </nav>
+    <main class="min-h-screen px-4 pb-16">
+        <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+            {% block content %} {% endblock %}
+        </div>
+    </main>
+    <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">
+        Fait avec <strong>Nuxt.js</strong> & <strong>Tailwind CSS</strong> /
+        Hébergé par <strong>Github</strong>
+    </footer>
+</body>
+
+</html>

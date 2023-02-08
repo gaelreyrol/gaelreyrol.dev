@@ -1,11 +1,15 @@
 {
-  "scripts" : {
+  "scripts": {
     "watch": "tailwindcss -i styles/main.css -o static/main.css --postcss --watch",
-    "build": "tailwindcss -i styles/main.css -o static/main.css --postcss --minify"
+    "build": "tailwindcss -i styles/main.css -o static/main.css --postcss --minify",
+    "resume:json": "dhall-to-json --file dhall/resume.dhall --output static/resume.json",
+    "resume:html": "cat static/resume.json | jsonresume-theme-even > static/resume.html",
+    "resume": "yarn resume:json && yarn resume:html"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.9",
     "autoprefixer": "10.4.13",
+    "jsonresume-theme-even": "0.18.1",
     "postcss": "8.4.21",
     "tailwindcss": "3.2.4"
   }

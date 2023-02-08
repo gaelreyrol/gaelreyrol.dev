@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
+{% if page.title %}
+    {% set page_title = page.title ~ " | " ~ config.title %}
+{% else %}
+    {% set page_title = config.title %}
+{% endif %}
+
+{% if page.description %}
+    {% set page_description = page.description %}
+{% else %}
+    {% set page_description = config.description %}
+{% endif %}
 
 <head>
     <meta charset="utf-8">
-    <title>Gaël Reyrol</title>
+    <title>{{ page_title }}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="{{ config.title }}">
+    <meta name="description" content="{{ page_description }}">
 
-    <meta property="og:title" content="{{ config.title }}">
-    <meta property="og:description" content="{{ config.description }}">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_description }}">
     
     <meta name="og:type" property="og:type" content="website">
     <meta name="og:site_name" property="og:site_name" content="gaelreyrol.dev">
     
-    <meta name="twitter:title" content="{{ config.title }}">
-    <meta name="twitter:description" content="{{ config.description }}">
+    <meta name="twitter:title" content="{{ page_title }}">
+    <meta name="twitter:description" content="{{ page_description }}">
     
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="gaelreyrol.dev">
@@ -58,7 +70,7 @@
     </nav>
     <main class="min-h-screen px-4 pb-16">
         <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
-            {% block content %} {% endblock %}
+            {% block content %}{% endblock %}
         </div>
     </main>
     <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">

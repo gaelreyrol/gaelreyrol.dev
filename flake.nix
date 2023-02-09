@@ -4,9 +4,11 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
+
+    dhall-resume.url = "github:gaelreyrol/dhall-resume";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils, dhall-resume }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; };
@@ -18,11 +20,19 @@
         ];
         src = ./.;
         npmPackageLock = builtins.fromJSON (builtins.readFile (src + "/package-lock.json"));
+        jsonResume = import (src + /dhall/resume) {
+          Resume = dhall-resume.packages.${system}.default;
+          inherit pkgs;
+        };
       in
       {
         devShells = {
           default = pkgs.mkShell {
-            packages = [] ++ buildPackages;
+            packages = with pkgs; [
+              dhall
+              dhall-nix
+              dhall-nixpkgs
+            ] ++ buildPackages;
           };
         };
         packages = flake-utils.lib.flattenTree {
@@ -33,13 +43,13 @@
             npmBuildScript = "styles:build";
             npmDepsHash = "sha256-6N3y2OPmSpgWrbIPS3JJ1i06icZGq4dx+zMUCiM7mRE=";
 
-            nativeBuildInputs = [] ++ buildPackages;
+            nativeBuildInputs = [ ] ++ buildPackages;
 
             installPhase = ''
               runHook preInstall
 
-              # dhall-to-json --file dhall/resume.dhall --output static/resume.json
-              # cat static/resume.json | node_modules/.bin/jsonresume-theme-even > static/resume.html
+              cp ${jsonResume} static/resume.json
+              cat static/resume.json | node_modules/.bin/jsonresume-theme-even > static/resume.html
               zola build
               cp -r public $out
 

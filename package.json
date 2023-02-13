@@ -1,62 +1,16 @@
 {
-  "name": "gaelreyrol.dev",
-  "version": "1.0.0",
-  "private": true,
+  "name": "gaelreyrol-website",
+  "version": "2022-02-09",
   "scripts": {
-    "postinstall": "husky install",
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style",
-    "test": "jest",
-    "gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "resume:json": "dhall-to-json --file dhall/resume.dhall --output static/resume.json",
-    "resume:html": "cat static/resume.json | jsonresume-theme-even > static/resume.html",
-    "resume": "yarn resume:json && yarn resume:html"
-  },
-  "lint-staged": {
-    "*.{js,vue}": "eslint",
-    "*.{css,vue}": "stylelint"
-  },
-  "dependencies": {
-    "@nuxt/content": "1.15.1",
-    "@nuxtjs/pwa": "3.3.5",
-    "@nuxtjs/sitemap": "2.4.0",
-    "@tailwindcss/typography": "0.5.4",
-    "dayjs": "1.11.5",
-    "jsonresume-theme-even": "0.17.0",
-    "nuxt": "2.15.8"
+    "styles:watch": "tailwindcss -i styles/main.css -o static/main.css --postcss --watch",
+    "styles:build": "tailwindcss -i styles/main.css -o static/main.css --postcss --minify",
+    "resume:build": "cat static/resume.json | jsonresume-theme-even > static/resume.html"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.18.9",
-    "@commitlint/cli": "17.0.3",
-    "@commitlint/config-conventional": "17.0.3",
-    "@nuxtjs/eslint-config": "10.0.0",
-    "@nuxtjs/eslint-module": "3.1.0",
-    "@nuxtjs/stylelint-module": "4.1.0",
-    "@nuxtjs/tailwindcss": "5.3.2",
-    "@vue/test-utils": "1.3.3",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "10.1.0",
-    "babel-jest": "28.1.3",
-    "eslint": "8.22.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-nuxt": "3.2.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "husky": "8.0.1",
-    "jest": "28.1.3",
-    "lint-staged": "13.0.3",
-    "postcss": "8.4.16",
-    "postcss-html": "1.5.0",
-    "prettier": "2.7.1",
-    "push-dir": "0.4.1",
-    "stylelint": "14.10.0",
-    "stylelint-config-prettier": "9.0.3",
-    "stylelint-config-recommended-vue": "1.4.0",
-    "stylelint-config-standard": "27.0.0",
-    "vue-jest": "3.0.7"
+    "@tailwindcss/typography": "0.5.9",
+    "autoprefixer": "10.4.13",
+    "jsonresume-theme-even": "0.18.1",
+    "postcss": "8.4.21",
+    "tailwindcss": "3.2.4"
   }
 }

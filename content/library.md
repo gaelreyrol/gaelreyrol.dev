@@ -1,7 +1,7 @@
 ---
-title: Bibliothèque
+title: Ma bibliothèque
+description: Liste de mes livres numériques
 ---
-### Bibliothèque
 
 Je me suis dit qu'il y avait peut-être un intérêt à partager les livres d'ingénierie
 logicielle et de programmation que je possède dans ma bibliothèque numérique.

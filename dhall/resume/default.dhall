@@ -1,13 +1,13 @@
 let Resume =
-      https://raw.githubusercontent.com/gaelreyrol/dhall-resume/bf916965d55ecf58d9b4320b7fc7175d2339792d/package.dhall
-        sha256:d40a87ca5a3e94bc4650f99947ee422906731cdf161ace9dded2e7e9b66a0b86
+      https://raw.githubusercontent.com/gaelreyrol/dhall-resume/main/package.dhall
+        sha256:3201ac0030b61bba68a730b0dea2c61d91a537e59a5c28303da7571646c49735
 
 let monthly = { per = "month" }
 
 in  Resume.Basic::{
     , basics = Some Resume.Basics::{
       , name = Some "Gaël Reyrol"
-      , image = Some "https://gaelreyrol.dev/_nuxt/static/avatar.jpeg"
+      , image = Some "https://gaelreyrol.dev/avatar.jpeg"
       , email = Some "me@gaelreyrol.dev"
       , url = Some "https://gaelreyrol.dev"
       , label = Some "Développeur Fullstack & Ops"
@@ -18,8 +18,7 @@ in  Resume.Basic::{
         , countryCode = Some "FR"
         }
       , profiles = Some
-        [
-          Resume.Profile::{
+        [ Resume.Profile::{
           , network = Some "Mastodon"
           , username = Some "gaelreyrol@mamot.fr"
           , url = Some "https://mamot.fr/@GaelReyrol"
@@ -49,21 +48,16 @@ in  Resume.Basic::{
           [ "Intégration d'un modèle d'abonnement multi-plateforme"
           , "Création d'un client Electron en remplacement d'une application legacy"
           ]
-        , skills = Some
-          [ "PHP"
-          , "MySQL"
-          , "Vue.js"
-          , "TypeScript"
-          , "Electron"
-          ]
+        , skills = Some [ "PHP", "MySQL", "Vue.js", "TypeScript", "Electron" ]
         , location = Some "Lille, France"
         , startDate = Some "2021-08"
         , endDate = Some "2023-01"
         , salaries = Some
-          [ Resume.Salary::{ amount = 3200, startDate = Some "2022-08" } // monthly
+          [     Resume.Salary::{ amount = 3200, startDate = Some "2022-08" }
+            //  monthly
           ]
-        },
-        Resume.Work::{
+        }
+      , Resume.Work::{
         , name = Some "Clever Cloud"
         , description = Some
             "Clever Cloud is an IT Automation company focused on developer productivity and hosting quality."
@@ -98,8 +92,10 @@ in  Resume.Basic::{
         , startDate = Some "2021-03"
         , endDate = Some "2022-07"
         , salaries = Some
-          [ Resume.Salary::{ amount = 2350, startDate = Some "2021-03" } // monthly
-          , Resume.Salary::{ amount = 2750, startDate = Some "2021-07" } // monthly
+          [     Resume.Salary::{ amount = 2350, startDate = Some "2021-03" }
+            //  monthly
+          ,     Resume.Salary::{ amount = 2750, startDate = Some "2021-07" }
+            //  monthly
           ]
         }
       , Resume.Work::{
@@ -143,8 +139,10 @@ in  Resume.Basic::{
         , startDate = Some "2018-10"
         , endDate = Some "2021-02"
         , salaries = Some
-          [ Resume.Salary::{ amount = 2250, startDate = Some "2018-10" } // monthly
-          , Resume.Salary::{ amount = 2600, startDate = Some "2020-07" } // monthly
+          [     Resume.Salary::{ amount = 2250, startDate = Some "2018-10" }
+            //  monthly
+          ,     Resume.Salary::{ amount = 2600, startDate = Some "2020-07" }
+            //  monthly
           ]
         }
       , Resume.Work::{
@@ -198,9 +196,12 @@ in  Resume.Basic::{
         , startDate = Some "2016-01"
         , endDate = Some "2018-10"
         , salaries = Some
-          [ Resume.Salary::{ amount = 1950, startDate = Some "2016-01" } // monthly
-          , Resume.Salary::{ amount = 2050, startDate = Some "2017-10" } // monthly
-          , Resume.Salary::{ amount = 2400, startDate = Some "2018-05" } // monthly
+          [     Resume.Salary::{ amount = 1950, startDate = Some "2016-01" }
+            //  monthly
+          ,     Resume.Salary::{ amount = 2050, startDate = Some "2017-10" }
+            //  monthly
+          ,     Resume.Salary::{ amount = 2400, startDate = Some "2018-05" }
+            //  monthly
           ]
         }
       , Resume.Work::{
@@ -307,6 +308,8 @@ in  Resume.Basic::{
           , "Wireguard"
           , "Elasticsearch"
           , "Kibana"
+          , "Nix"
+          , "NixOS"
           ]
         }
       , Resume.Skill::{

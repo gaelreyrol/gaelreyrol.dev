@@ -1,11 +1,8 @@
 ---
 title: Game of Life
 description: Project pédagogique pour m'initier au Web Assembly
-tags:
-- rust
-- webassembly
+date: 2020-12-21
 ---
-### Game of Life
 
 Ce projet pédagogique basé sur [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) est écrit en **Rust** et compilé en **WebAssembly** avec les outils [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen) et [wasm-pack](https://github.com/rustwasm/wasm-pack).
 

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div>
+    <h1>{{ section.title }}</h1>
+    {% for project in section.pages %}
+    <div
+      class="flex flex-col space-y-1 border rounded-md p-4 mb-4"
+    >
+      <div
+        class="flex flex-col sm:flex-row items-start space-y-2 sm:space-y-0 sm:space-x-2 sm:items-center"
+      >
+        <a href="{{ project.permalink }}">{{ project.title }}</a>
+      </div>
+      <span class="block text-sm sm:text-md md:text-xl">
+        {{ project.description }}
+      </span>
+      <span class="block text-xs text-right sm:text-left sm:text-sm italic">
+        Démarré le {{ project.date }}
+      </span>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock content %}

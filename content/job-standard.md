@@ -1,7 +1,7 @@
 ---
-title: Critères de recrutement
+title: Mes critères de recrutement
+description: Quels sont mes critères de recrutement lorsque je passe des entretiens
 ---
-### Critères de recrutement
 
 Lorsque je consulte une offre d'emploi, je me demande en premier si je corresponds 
 aux attentes mais qu'en est-il de l'inverse ?

@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/zevran
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gaelreyrol.dev
+  * I am zevran (https://keybase.io/zevran) on keybase.
+  * I have a public key with fingerprint 3492 D8FA ACFF 4C5F A56E  50B7 DFB9 B69A 2C42 7F61
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101d10b7b45869f1d9e8e53f7a6b0a2f2441d3544c39b26afacfddc487d100224180a",
+      "fingerprint": "3492d8faacff4c5fa56e50b7dfb9b69a2c427f61",
+      "host": "keybase.io",
+      "key_id": "dfb9b69a2c427f61",
+      "kid": "0101f64bdd964e5619545133f9775cc928f60868c60f2235fe9d1008ffc3a0d25f680a",
+      "uid": "db68cd86ebd7ccf14d218d1773b91f19",
+      "username": "zevran"
+    },
+    "merkle_root": {
+      "ctime": 1607935726,
+      "hash_meta": "9981b3841600bd537a527025a0627ecf7f415a46e0cf5bb19bdf64e9eff7c5b0",
+      "seqno": 18396884
+    },
+    "revoke": {
+      "sig_ids": [
+        "b647d282a0bd6eaed4ddbff7d846f888969bef34a6ab4181c068e7de691147b90f"
+      ]
+    },
+    "service": {
+      "hostname": "gaelreyrol.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1607935749,
+  "expire_in": 157680000,
+  "prev": "2fe83b6fe67739604b96fe2a89af0e75849caff7f0577ef45ba2da9a21fa4f81",
+  "seqno": 82,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMQEAnicbVN5bBVFHG7laPpQaCBahFDoAilpynOP2dmdJyKQGgwJEUK5QmWZ2Zlp
+H+072Pf6Xg9aUqpQCWfBglhCKSAEDChHCUdUSqUcApEip4CIAU055EixgK3zAENi
+3H82M/P9vu/7fb+Zxtc6xbnir+6tX50xag6OP94QLYizzqV1KZFIgBZJnhIpjz37
+sXzKQmErz0sljyQrskIVmRgE6CZEXKGImUzXuIEhkbHKVQAUqukA2BoiKsQc25xS
+G5iGKJNVFSimjKUMiXv9OcwJOl5/WNBqAKnU5FiAObB1jnXIdKFCOUEEIqzaQDU4
+VERhbiAUqxDmCA4xtzcg9sTCembvf/AvfXMICKUIAqZDBelAVzSNI8PQbRupJoey
+CU0bylxVNZ0zFPNrcm5rWKaqzuFz3wXPdYiAUhMyQg3b5gqgqmJSxTA0ghSuoBgw
+xBw/9jGBLmYRB/ul0gzJx5y8fGY5gUA4Fq0d9sYACpQNpOmGCkV7OJRr+VgYizqE
+TIVoJhDnMqG6ZmBdNWRVxzJUDWZzgwNFxwAy2eY6IQoiVPTIEOPcsHUiCxchNssf
+EAqmhqBpAmHBYZFAHouph7w5IrWQ5JkmEQgMqpoqFjqQYUYBpUSwUBNAbpomgogw
+rgEMMRETVGwZmsygDCJFAQZBMpc+LI2pORGv/Yw8NqYX7edglu+wIieQ76YsIkwF
+nUA4YAfyxVluOBwMeWLRhIuCMXCUEesFjUW8fiquiaiIMCfkDfhFIwL5n9QAypBY
+YdDrMMsbQ+iGGJX4YjpCziOpnJkagZxBMR8EZUCQWKjYRJjLzNBNgGwsmuWybhiM
+A51glWJxiRSOATeVlzGaqvCJcwSnyM6PwwUOk0obDmZ3jot3xXXt8krs/cS5EpP+
+fVUn1vXoiGh/nOo5cpu6dfDyuuDGblM7Jzx5eL3H8vVZ81ce6J/Vc8+IcOvNZH+b
+Z9qIFXV7Ui9n15XXBVMWjH5YUtED1Hc91RLd/uiT9KanUxvir11PWeacycwe8ihp
+67zjqRsTi61lx/Q3Xx9fVrOw5dO/b6hjshckjOlUZQzta1Wmu3z137clT/n43vrA
+bmnYu1VW+uM565puTh/rXtk0dHhh9+QJtWnvvTpT/npVzeMZ3S52f+S+ff4eOdFe
+s+NKWetMX1P0q/uT+jXPPx8tr9wbfHpo0efRi/srh4zf8oN+6W7zvl505y+t+zyp
+zd8lfRma2pY+b7Ndk72rYMPiD6pnnZvDggNrGlOa5UUnnazpR5cMa+8+bMzbVQNO
+q7/NG3x4yjvre711/5sZp28zLA/s5JqW5T4yqDZp7WdrNlibx7ZOrD7Q8mBh5my1
++KMBAzae3emuaC2/0Mc64tq59teGM+MWR2en9NuhNpZX1F3ZVFx/fvjmu5Vz91uh
+vC9uvJG36ecWcmj71Y7qb6uWTM7YMmhpyaTJpTmFic3HpJO9U9sml0fkFWMHZrQG
+ay+kd+5SlvpTTp/RR2pLFx298qBl5LZDZ1d3TNx1KaG0/fLcywcO+3avbPxxXMea
+zMY0vV97onsVyvRpCaHGh0UHpb69f//zzrir11zvrxlyq6L/qMjFkjszQrnJZX/d
+StvS5yTaN8FffazQGLX6yYZ/AD2ECg0=
+=L17W
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zevran
+
+==================================================================

@@ -7,14 +7,13 @@ let
     dependencies = [ Resume ];
     source = true;
   };
-  drv = pkgs.stdenv.mkDerivation {
-    name = "dhall-resume-to-json";
-
-    buildCommand = ''
-      dhall-to-json <<< "${code}/source.dhall" > $out
-    '';
-
-    buildInputs = [ pkgs.dhall-json ];
-  };
 in
-drv
+pkgs.stdenv.mkDerivation {
+  name = "dhall-resume-to-json";
+
+  buildCommand = ''
+    dhall-to-json <<< "${code}/source.dhall" > $out
+  '';
+
+  buildInputs = [ pkgs.dhall-json ];
+}

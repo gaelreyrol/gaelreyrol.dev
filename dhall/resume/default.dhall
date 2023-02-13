@@ -7,7 +7,7 @@ let monthly = { per = "month" }
 in  Resume.Basic::{
     , basics = Some Resume.Basics::{
       , name = Some "Gaël Reyrol"
-      , image = Some "https://gaelreyrol.dev/_nuxt/static/avatar.jpeg"
+      , image = Some "https://gaelreyrol.dev/avatar.jpeg"
       , email = Some "me@gaelreyrol.dev"
       , url = Some "https://gaelreyrol.dev"
       , label = Some "Développeur Fullstack & Ops"
@@ -308,6 +308,8 @@ in  Resume.Basic::{
           , "Wireguard"
           , "Elasticsearch"
           , "Kibana"
+          , "Nix"
+          , "NixOS"
           ]
         }
       , Resume.Skill::{

@@ -3,7 +3,7 @@ title: À propos
 description: Petite auto-présentation
 ---
 
-Je suis actuellement à la recherche d'un poste en tant que developpeur PHP à [Lille](https://www.openstreetmap.org/relation/58404) de préférence. 
+Je suis développeur PHP à [Lille](https://www.openstreetmap.org/relation/58404) de préférence. 
 
 > TL;DR: Je suis développeur Full Stack avec une grosse pincée d'Ops.
 

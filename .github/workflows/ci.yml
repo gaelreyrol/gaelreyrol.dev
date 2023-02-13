@@ -22,7 +22,7 @@ jobs:
       - name: Setup Cachix
         uses: cachix/cachix-action@v12
         with:
-          name: gaelreyrol-website
+          name: gaelreyrol
 
       - name: Run Dhall linter
         run: |

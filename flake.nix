@@ -16,7 +16,6 @@
           zola
           nodejs
           nodePackages.npm
-          dhall-json
         ];
         src = ./.;
         npmPackageLock = builtins.fromJSON (builtins.readFile (src + "/package-lock.json"));
@@ -32,6 +31,7 @@
               dhall
               dhall-nix
               dhall-nixpkgs
+              dhall-json
             ] ++ buildPackages;
           };
         };

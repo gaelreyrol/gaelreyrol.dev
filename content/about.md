@@ -3,9 +3,7 @@ title: À propos
 description: Petite auto-présentation
 ---
 
-Je suis développeur PHP à [Lille](https://www.openstreetmap.org/relation/58404) de préférence. 
-
-> TL;DR: Je suis développeur Full Stack avec une grosse pincée d'Ops.
+> TL;DR: Je suis développeur Full Stack avec une grosse pincée d'Ops à [Lille](https://www.openstreetmap.org/relation/58404).
 
 Si vous souhaitez me contacter pour une proposition d'emploi, voici mon <a href="/resume.html" target="_blank">CV</a>.
 Je vous invite aussi à consulter mes [critères de recrutement](/job-standard).

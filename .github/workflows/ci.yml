@@ -25,8 +25,10 @@ jobs:
           name: gaelreyrol
 
       - name: Run Dhall linter
-        run: |
-          nix develop --command dhall lint dhall/**/*.dhall
+        run: nix develop --command dhall lint dhall/**/*.dhall
+
+      - name: Run Flake check
+        run: nix flake check
 
   deploy:
     needs: lint
@@ -46,8 +48,7 @@ jobs:
           name: gaelreyrol
 
       - name: Build website package
-        run: |
-          nix build
+        run: nix build
 
       - name: Deploy website build
         uses: peaceiris/actions-gh-pages@v3

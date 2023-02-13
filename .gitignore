@@ -1,5 +1,5 @@
 .direnv
 node_modules
-static
+public
 result
-public/main.css
+static/main.css

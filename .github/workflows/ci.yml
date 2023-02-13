@@ -22,7 +22,7 @@ jobs:
       - name: Run Dhall linter
         run: |
           nix develop --command \
-            dhall lint dhall/*.dhall
+            dhall lint dhall/**/*.dhall
 
   deploy:
     needs: lint

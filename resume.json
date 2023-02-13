@@ -1,7 +1,7 @@
 {
   "basics": {
     "email": "me@gaelreyrol.dev",
-    "image": "https://gaelreyrol.dev/_nuxt/static/avatar.jpeg",
+    "image": "https://gaelreyrol.dev/avatar.jpeg",
     "label": "Développeur Fullstack & Ops",
     "location": {
       "city": "Lille",
@@ -147,7 +147,9 @@
         "Vault",
         "Wireguard",
         "Elasticsearch",
-        "Kibana"
+        "Kibana",
+        "Nix",
+        "NixOS"
       ],
       "name": "Ops"
     },

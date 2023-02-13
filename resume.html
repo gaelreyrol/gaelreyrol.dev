@@ -1,598 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-      <title>Gaël Reyrol</title>
-      
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
-    <style>:root {
-  color-scheme: light dark;
-
-  --color-background: #ffffff; /* White */
-  --color-muted: #f3f4f5; /* Light Gray 200 */
-  --color-primary: #191e23; /* Dark Gray 900 */
-  --color-secondary: #6c7781; /* Dark Gray 300 */
-  --color-accent: #ffb900; /* Accent Yellow */
-  --color-link: #46b450; /* Accent Green */
-
-  --scale-ratio: 1.25;
-  --scale0: 1rem;
-  --scale1: calc(var(--scale0) * var(--scale-ratio));
-  --scale2: calc(var(--scale1) * var(--scale-ratio));
-  --scale3: calc(var(--scale2) * var(--scale-ratio));
-  --scale4: calc(var(--scale3) * var(--scale-ratio));
-  --scale5: calc(var(--scale4) * var(--scale-ratio));
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #191e23; /* Dark Gray 900 */
-    --color-muted: #23282d; /* Dark Gray 800 */
-    --color-primary: #fbfbfc; /* Light Gray 100 */
-    --color-secondary: #ccd0d4; /* Light Gray 700 */
-  }
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 14px;
-}
-
-body {
-  background: var(--color-background);
-  color: var(--color-primary);
-  display: grid;
-  font: 1em/1.5 Lato, sans-serif;
-  gap: 2em;
-  grid-template-columns:
-    [full-start]
-    1fr
-    [main-start side-start]
-    minmax(min-content, 12em)
-    [side-end content-start]
-    minmax(min-content, 36em)
-    [main-end content-end]
-    1fr
-    [full-end];
-  grid-template-rows: auto [content] 0;
-  margin-bottom: 4em;
-}
-
-body::before {
-  content: '';
-  grid-column: full;
-  grid-row: content;
-}
-
-ol,
-ul {
-  padding-left: 1em;
-}
-
-:not(.icon-list, .tag-list) > li + li {
-  margin-top: 0.4em;
-}
-
-li::marker,
-.network {
-  color: var(--color-secondary);
-}
-
-a {
-  color: var(--color-link);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:focus,
-a:hover {
-  color: var(--color-accent);
-}
-
-h1,
-h2,
-h3,
-h5 {
-  font-weight: normal;
-}
-
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: var(--scale5);
-}
-
-h2 {
-  color: var(--color-secondary);
-  font-size: var(--scale4);
-}
-
-h3 {
-  color: var(--color-accent);
-  font-size: var(--scale3);
-  grid-column: side;
-  margin-bottom: 1rem;
-}
-
-h4 {
-  font-size: var(--scale2);
-}
-
-h5 {
-  font-size: var(--scale1);
-}
-
-h6 {
-  font-size: var(--scale0);
-}
-
-blockquote {
-  border-left: 0.2em solid var(--color-muted);
-  padding-left: 1em;
-}
-
-cite {
-  color: var(--color-secondary);
-  font-style: inherit;
-}
-
-cite::before {
-  content: '— ';
-}
-
-svg {
-  margin-right: 0.2em;
-  vertical-align: -0.2em;
-}
-
-.masthead {
-  background: var(--color-muted);
-  display: inherit;
-  gap: inherit;
-  grid-column: full;
-  grid-template-columns: inherit;
-  padding: 4em 0;
-  text-align: center;
-}
-
-.masthead > *,
-section {
-  grid-column: main;
-}
-
-.masthead > img {
-  border-radius: 50%;
-  margin: 0 auto;
-  max-width: 12em;
-}
-
-article > * + *,
-blockquote > * + * {
-  margin-top: 0.6em;
-}
-
-.meta {
-  color: var(--color-secondary);
-}
-
-.stack {
-  display: grid;
-  gap: 1.5em;
-}
-
-.icon-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em 1em;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-.grid-list {
-  display: grid;
-  gap: 1em;
-}
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em;
-  list-style: none;
-  padding: 0;
-}
-
-.tag-list > li {
-  background: var(--color-muted);
-  border-radius: 0.2em;
-  padding: 0.2em 0.6em;
-}
-
-.bullet-item:not(:first-child)::before {
-  content: '· ';
-  margin: 0 0.2em;
-}
-
-@media print, (min-width: 48em) {
-  h3 {
-    text-align: right;
-    margin-bottom: inherit;
-  }
-
-  .masthead {
-    text-align: inherit;
-  }
-
-  .masthead > *,
-  section {
-    grid-column: content;
-  }
-
-  .masthead img {
-    grid-column: side;
-    grid-row: span 2;
-    max-width: 100%;
-  }
-
-  section {
-    display: contents;
-  }
-
-  .icon-list {
-    flex-direction: column;
-  }
-
-  .grid-list {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(calc((100% - 1em) / 2), 1fr)
-    );
-  }
-}
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        
+    <title>Gaël Reyrol</title>
+    
+  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+        <style>:root{color-scheme:light dark;--color-background: #ffffff;--color-muted: #f3f4f5;--color-primary: #191e23;--color-secondary: #6c7781;--color-accent: #ffb900;--color-link: #46b450;--scale-ratio: 1.25;--scale0: 1rem;--scale1: calc(var(--scale0) * var(--scale-ratio));--scale2: calc(var(--scale1) * var(--scale-ratio));--scale3: calc(var(--scale2) * var(--scale-ratio));--scale4: calc(var(--scale3) * var(--scale-ratio));--scale5: calc(var(--scale4) * var(--scale-ratio))}@media (prefers-color-scheme: dark){:root{--color-background: #191e23;--color-muted: #23282d;--color-primary: #fbfbfc;--color-secondary: #ccd0d4}}*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px}body{background:var(--color-background);color:var(--color-primary);display:grid;font:1em/1.5 Lato,sans-serif;gap:2em;grid-template-columns:[full-start] 1fr [main-start side-start] minmax(min-content,12em) [side-end content-start] minmax(min-content,36em) [main-end content-end] 1fr [full-end];grid-template-rows:auto [content] 0;margin-bottom:4em}body:before{content:"";grid-column:full;grid-row:content}ol,ul{padding-left:1em}:not(.icon-list,.tag-list)>li+li{margin-top:.4em}li::marker,.network{color:var(--color-secondary)}a{color:var(--color-link);text-decoration:none;transition:color .2s}a:focus,a:hover{color:var(--color-accent)}h1,h2,h3,h5{font-weight:400}h1,h2,h3{line-height:1.2}h1{font-size:var(--scale5)}h2{color:var(--color-secondary);font-size:var(--scale4)}h3{color:var(--color-accent);font-size:var(--scale3);grid-column:side;margin-bottom:1rem}h4{font-size:var(--scale2)}h5{font-size:var(--scale1)}h6{font-size:var(--scale0)}blockquote{border-left:.2em solid var(--color-muted);padding-left:1em}cite{color:var(--color-secondary);font-style:inherit}cite:before{content:"\2014  "}svg{margin-right:.2em;vertical-align:-.2em}.masthead{background:var(--color-muted);display:inherit;gap:inherit;grid-column:full;grid-template-columns:inherit;padding:4em 0;text-align:center}.masthead>*,section{grid-column:main}.masthead>img{border-radius:50%;margin:0 auto;max-width:12em}article>*+*,blockquote>*+*{margin-top:.6em}.meta{color:var(--color-secondary)}.stack{display:grid;gap:1.5em}.icon-list{display:flex;flex-wrap:wrap;gap:.4em 1em;justify-content:center;list-style:none;padding:0}.grid-list{display:grid;gap:1em}.tag-list{display:flex;flex-wrap:wrap;gap:.4em;list-style:none;padding:0}.tag-list>li{background:var(--color-muted);border-radius:.2em;padding:.2em .6em}.bullet-item:not(:first-child):before{content:"\b7  ";margin:0 .2em}@media print,(min-width: 48em){h3{text-align:right;margin-bottom:inherit}.masthead{text-align:inherit}.masthead>*,section{grid-column:content}.masthead img{grid-column:side;grid-row:span 2;max-width:100%}section{display:contents}.icon-list{flex-direction:column}.grid-list{grid-template-columns:repeat(auto-fit,minmax(calc((100% - 1em)/2),1fr))}}
 </style>
-  </head>
-  <body>
-      <header class="masthead">
-          <img src="https://gaelreyrol.dev/_nuxt/static/avatar.jpeg" alt="">
-        <div>
-            <h1>Gaël Reyrol</h1>
-            <h2>Développeur Fullstack &amp; Ops</h2>
-        </div>
-        <ul class="icon-list">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                Lille, France
-              </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <a href="mailto:me@gaelreyrol.dev">me@gaelreyrol.dev</a>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-              <a href="https://gaelreyrol.dev">gaelreyrol.dev</a>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                  <a href="https://mamot.fr/@GaelReyrol">gaelreyrol@mamot.fr</a>
-                <span class="network">(Mastodon)</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  <a href="https://github.com/gaelreyrol">gaelreyrol</a>
-                <span class="network">(Github)</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                  <a href="https://linkedin.com/in/gaelreyrol">gaelreyrol</a>
-                <span class="network">(Linkedin)</span>
-            </li>
-        </ul>
-      </header>
-
-      <section id="work">
-        <h3>Work</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <h4>Développeur Backend PHP</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="https://www.karafun-group.com">KaraFun Group</a></strong>
-                      <span class="bullet-item">KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké.</span>
-                  </div>
-                  <div>
-                    <time datetime="2021-08">Aug 2021</time> –
-                    <time datetime="2023-01">Jan 2023</time>
-                  </div>
-                    <div>Lille, France</div>
+      </head>
+      <body>
+        
+    <header class="masthead">
+      <img src="https://gaelreyrol.dev/avatar.jpeg" alt="">
+      <div>
+        <h1>Gaël Reyrol</h1>
+        <h2>Développeur Fullstack & Ops</h2>
+      </div>
+      
+      <ul class="icon-list">
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Lille, France
+          </li>
+        
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:me@gaelreyrol.dev">me@gaelreyrol.dev</a>
+          </li>
+        
+        
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            <a href="https://gaelreyrol.dev">gaelreyrol.dev</a>
+          </li>
+        
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <a href="https://mamot.fr/@GaelReyrol">gaelreyrol@mamot.fr</a>
+            <span class="network">(Mastodon)</span>
+          </li>
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <a href="https://github.com/gaelreyrol">gaelreyrol</a>
+            <span class="network">(Github)</span>
+          </li>
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <a href="https://linkedin.com/in/gaelreyrol">gaelreyrol</a>
+            <span class="network">(Linkedin)</span>
+          </li>
+        
+      </ul>
+    </header>
+  
+        
+    <section id="work">
+      <h3>Work</h3>
+      <div class="stack">
+        
+          <article>
+            <header>
+              <h4>Développeur Backend PHP</h4>
+              <div class="meta">
+                <div>
+                  <strong><a href="https://www.karafun-group.com">KaraFun Group</a></strong>
+                  <span class="bullet-item">KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké.</span>
                 </div>
-              </header>
-                <p>Maintenir et améliorer les services et APIs de l'ensemble du groupe.</p>
-                <ul>
-                    <li><p>Intégration d'un modèle d'abonnement multi-plateforme</p></li>
-                    <li><p>Création d'un client Electron en remplacement d'une application legacy</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Ingénieur Support</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="https://www.clever-cloud.com">Clever Cloud</a></strong>
-                      <span class="bullet-item">Clever Cloud is an IT Automation company focused on developer productivity and hosting quality.</span>
-                  </div>
-                  <div>
-                    <time datetime="2021-03">Mar 2021</time> –
-                    <time datetime="2022-07">Jul 2022</time>
-                  </div>
-                    <div>Lille, France</div>
+                <div><time datetime="2021-08">Aug 2021</time> – <time datetime="2023-01">Jan 2023</time></div>
+                <div>Lille, France</div>
+              </div>
+            </header>
+            <p>Maintenir et améliorer les services et APIs de l'ensemble du groupe.</p>
+            
+              <ul>
+                <li><p>Intégration d'un modèle d'abonnement multi-plateforme</p></li><li><p>Création d'un client Electron en remplacement d'une application legacy</p></li>
+              </ul>
+            
+          </article>
+        
+          <article>
+            <header>
+              <h4>Ingénieur Support</h4>
+              <div class="meta">
+                <div>
+                  <strong><a href="https://www.clever-cloud.com">Clever Cloud</a></strong>
+                  <span class="bullet-item">Clever Cloud is an IT Automation company focused on developer productivity and hosting quality.</span>
                 </div>
-              </header>
-                <p>Contribuer à l'amélioration de la productivité des développeurs et de la qualité des environnements d'exécution</p>
-                <ul>
-                    <li><p>Responsable support de niveau 1</p></li>
-                    <li><p>Construction d'un outil d'analyse et de rapport d'activité de l'équipe support</p></li>
-                    <li><p>Maintenance et amélioration de la documentation externe &amp; interne et contribuer</p></li>
-                    <li><p>Développement d'outils externe et interne (CLI, Provider Terraform, SDK)</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Responsable du développement Web</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="https://dansmaculotte.com">Dans Ma Culotte</a></strong>
-                      <span class="bullet-item">Dans Ma Culotte démocratise auprès de tout·e·s l&#x27;accès à une large variété de produits menstruels sains et responsables.</span>
-                  </div>
-                  <div>
-                    <time datetime="2018-10">Oct 2018</time> –
-                    <time datetime="2021-02">Feb 2021</time>
-                  </div>
-                    <div>Caen, France</div>
+                <div><time datetime="2021-03">Mar 2021</time> – <time datetime="2022-07">Jul 2022</time></div>
+                <div>Lille, France</div>
+              </div>
+            </header>
+            <p>Contribuer à l'amélioration de la productivité des développeurs et de la qualité des environnements d'exécution</p>
+            
+              <ul>
+                <li><p>Responsable support de niveau 1</p></li><li><p>Construction d'un outil d'analyse et de rapport d'activité de l'équipe support</p></li><li><p>Maintenance et amélioration de la documentation externe &amp; interne et contribuer</p></li><li><p>Développement d'outils externe et interne (CLI, Provider Terraform, SDK)</p></li>
+              </ul>
+            
+          </article>
+        
+          <article>
+            <header>
+              <h4>Responsable du développement Web</h4>
+              <div class="meta">
+                <div>
+                  <strong><a href="https://dansmaculotte.com">Dans Ma Culotte</a></strong>
+                  <span class="bullet-item">Dans Ma Culotte démocratise auprès de tout·e·s l'accès à une large variété de produits menstruels sains et responsables.</span>
                 </div>
-              </header>
-                <p>Création d'une plateforme digitale de vente</p>
-                <ul>
-                    <li><p>Création de la boutique en ligne, de son interface logistique, du suivi de commandes, de la facturation et de la plateforme de gestion de contenu</p></li>
-                    <li><p>Mise en place de l'amélioration et du déploiement des livrables</p></li>
-                    <li><p>Surveillance et amélioration des performances liées au SEO</p></li>
-                    <li><p>Organisation et management de l'équipe de développement en relation avec le PO via la méthodologie Agile (Scrum)</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Développeur Fullstack &amp; DevOps</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="https://soyhuce.fr">SoyHuCe</a></strong>
-                      <span class="bullet-item">Conseil, accompagnement en transformation digitale, laboratoire R&amp;D en algorithmie et datascience, déploiement d&#x27;architectures et édition de logiciels.</span>
-                  </div>
-                  <div>
-                    <time datetime="2016-01">Jan 2016</time> –
-                    <time datetime="2018-10">Oct 2018</time>
-                  </div>
-                    <div>Caen, France</div>
+                <div><time datetime="2018-10">Oct 2018</time> – <time datetime="2021-02">Feb 2021</time></div>
+                <div>Caen, France</div>
+              </div>
+            </header>
+            <p>Création d'une plateforme digitale de vente</p>
+            
+              <ul>
+                <li><p>Création de la boutique en ligne, de son interface logistique, du suivi de commandes, de la facturation et de la plateforme de gestion de contenu</p></li><li><p>Mise en place de l'amélioration et du déploiement des livrables</p></li><li><p>Surveillance et amélioration des performances liées au SEO</p></li><li><p>Organisation et management de l'équipe de développement en relation avec le PO via la méthodologie Agile (Scrum)</p></li>
+              </ul>
+            
+          </article>
+        
+          <article>
+            <header>
+              <h4>Développeur Fullstack & DevOps</h4>
+              <div class="meta">
+                <div>
+                  <strong><a href="https://soyhuce.fr">SoyHuCe</a></strong>
+                  <span class="bullet-item">Conseil, accompagnement en transformation digitale, laboratoire R&D en algorithmie et datascience, déploiement d'architectures et édition de logiciels.</span>
                 </div>
-              </header>
-                <p>Contribuer à la création et à l'amélioration des outils à disposition des collaborateurs pour développer et déployer les services</p>
-                <ul>
-                    <li><p>Mise en place de l'infratructure interne et externe des services délivrés</p></li>
-                    <li><p>Développement d'une plateforme Big Data type Lambda</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <h4>Formateur Web</h4>
-                <div class="meta">
-                  <div>
-                    <strong><a href="https://www.brassart.fr/campus/ecole-caen">École Brassart</a></strong>
-                      <span class="bullet-item">L&#x27;école Brassart est une école privée française d&#x27;arts graphiques</span>
-                  </div>
-                  <div>
-                    <time datetime="2016-01">Jan 2016</time> –
-                    <time datetime="2016-12">Dec 2016</time>
-                  </div>
-                    <div>Caen, France</div>
+                <div><time datetime="2016-01">Jan 2016</time> – <time datetime="2018-10">Oct 2018</time></div>
+                <div>Caen, France</div>
+              </div>
+            </header>
+            <p>Contribuer à la création et à l'amélioration des outils à disposition des collaborateurs pour développer et déployer les services</p>
+            
+              <ul>
+                <li><p>Mise en place de l'infratructure interne et externe des services délivrés</p></li><li><p>Développement d'une plateforme Big Data type Lambda</p></li>
+              </ul>
+            
+          </article>
+        
+          <article>
+            <header>
+              <h4>Formateur Web</h4>
+              <div class="meta">
+                <div>
+                  <strong><a href="https://www.brassart.fr/campus/ecole-caen">École Brassart</a></strong>
+                  <span class="bullet-item">L'école Brassart est une école privée française d'arts graphiques</span>
                 </div>
-              </header>
-                <p>Formation sur la spécialité Web pour les élèves de 2ème année</p>
-            </article>
-            <article>
-              <header>
-                <h4>Foundateur</h4>
-                <div class="meta">
-                  <div>
-                    <strong>Makeidea</strong>
-                      <span class="bullet-item">Plateforme de partage de modèle 3D à imprimer. RIP</span>
-                  </div>
-                  <div>
-                    <time datetime="2016-01">Jan 2016</time> –
-                    <time datetime="2016-12">Dec 2016</time>
-                  </div>
-                    <div>Caen, France</div>
+                <div><time datetime="2016-01">Jan 2016</time> – <time datetime="2016-12">Dec 2016</time></div>
+                <div>Caen, France</div>
+              </div>
+            </header>
+            <p>Formation sur la spécialité Web pour les élèves de 2ème année</p>
+            
+          </article>
+        
+          <article>
+            <header>
+              <h4>Foundateur</h4>
+              <div class="meta">
+                <div>
+                  <strong>Makeidea</strong>
+                  <span class="bullet-item">Plateforme de partage de modèle 3D à imprimer. RIP</span>
                 </div>
-              </header>
-                <p>Gestion et développement du projet</p>
-            </article>
-        </div>
-      </section>
-      <section id="education">
-        <h3>Education</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <h4><a href="https://42.fr">École 42 - Paris</a></h4>
-                <div class="meta">
-                    <strong>Programmation informatique</strong>
-                  <div>
-                    <time datetime="2013-09">Sep 2013</time> –
-                    <time datetime="2016-01">Jan 2016</time>
-                  </div>
-                </div>
-              </header>
-                <p>Degree</p>
-                <h5>Courses</h5>
-                <ul>
-                    <li><p>Algorithmie</p></li>
-                    <li><p>Web</p></li>
-                    <li><p>Unix</p></li>
-                </ul>
-            </article>
-        </div>
-      </section>
-      <section id="skills">
-        <h3>Skills</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Backend</h4>
-                <ul class="tag-list">
-                    <li>Laravel</li>
-                    <li>Eloquent</li>
-                    <li>Symfony</li>
-                    <li>Doctrine</li>
-                    <li>Golang</li>
-                    <li>Beego</li>
-                    <li>Revel</li>
-                    <li>Gorilla</li>
-                    <li>Gorm</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>Knex.js</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Frontend</h4>
-                <ul class="tag-list">
-                    <li>Nuxt.js</li>
-                    <li>Vue.js</li>
-                    <li>Webpack</li>
-                    <li>PostCSS</li>
-                    <li>Tailwindcss</li>
-                    <li>Storybook</li>
-                    <li>Lighthouse</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Testing</h4>
-                <ul class="tag-list">
-                    <li>Phpunit</li>
-                    <li>Jest</li>
-                    <li>Cypress</li>
-                    <li>Percy</li>
-                    <li>Molecule</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Database</h4>
-                <ul class="tag-list">
-                    <li>PostgreSQL</li>
-                    <li>MySQL</li>
-                    <li>Redis</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Message Queue</h4>
-                <ul class="tag-list">
-                    <li>Kafka</li>
-                    <li>RabbitMQ</li>
-                    <li>Apache Pulsar</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Storage</h4>
-                <ul class="tag-list">
-                    <li>S3</li>
-                    <li>FTP</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Ops</h4>
-                <ul class="tag-list">
-                    <li>Terraform</li>
-                    <li>Ansible</li>
-                    <li>Packer</li>
-                    <li>Vagrant</li>
-                    <li>Docker</li>
-                    <li>Apache Mesos</li>
-                    <li>Nomad</li>
-                    <li>Kubernetes</li>
-                    <li>Consul</li>
-                    <li>Prometheus</li>
-                    <li>Grafana</li>
-                    <li>Vault</li>
-                    <li>Wireguard</li>
-                    <li>Elasticsearch</li>
-                    <li>Kibana</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Reverse Proxy</h4>
-                <ul class="tag-list">
-                    <li>Traefik</li>
-                    <li>Nginx</li>
-                    <li>Apache</li>
-                    <li>Sozu</li>
-                    <li>HAProxy</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Cloud</h4>
-                <ul class="tag-list">
-                    <li>Clever Cloud</li>
-                    <li>Cloudflare</li>
-                    <li>AWS</li>
-                    <li>Google App Engine</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Automation</h4>
-                <ul class="tag-list">
-                    <li>Github Actions</li>
-                    <li>Gitlab CI</li>
-                    <li>Jenkins</li>
-                </ul>
-            </div>
-        </div>
-      </section>
-      <section id="languages">
-        <h3>Languages</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Français</h4>
-              Native
-            </div>
-            <div>
-                <h4>English</h4>
-              Fluent
-            </div>
-        </div>
-      </section>
-      <section id="interests">
-        <h3>Interests</h3>
-        <div class="grid-list">
-            <div>
-                <h4>Roller Derby</h4>
-            </div>
-            <div>
-                <h4>Harmonica</h4>
-            </div>
-            <div>
-                <h4>Littérature &amp; Bande dessinées</h4>
-            </div>
-            <div>
-                <h4>Humanitaire</h4>
-            </div>
-        </div>
-      </section>
-  </body>
-</html>
+                <div><time datetime="2016-01">Jan 2016</time> – <time datetime="2016-12">Dec 2016</time></div>
+                <div>Caen, France</div>
+              </div>
+            </header>
+            <p>Gestion et développement du projet</p>
+            
+          </article>
+        
+      </div>
+    </section>
+  
+        
+        
+    <section id="education">
+      <h3>Education</h3>
+      <div class="stack">
+        
+          <article>
+            <header>
+              <h4><a href="https://42.fr">École 42 - Paris</a></h4>
+              <div class="meta">
+                <strong>Programmation informatique</strong>
+                <div><time datetime="2013-09">Sep 2013</time> – <time datetime="2016-01">Jan 2016</time></div>
+              </div>
+            </header>
+            <p>Degree</p>
+            
+              <h5>Courses</h5>
+              <ul>
+                <li><p>Algorithmie</p></li><li><p>Web</p></li><li><p>Unix</p></li>
+              </ul>
+            
+          </article>
+        
+      </div>
+    </section>
+  
+        
+        
+        
+        
+        
+    <section id="skills">
+      <h3>Skills</h3>
+      <div class="grid-list">
+        
+          <div>
+            <h4>Backend</h4>
+            
+              <ul class="tag-list">
+                <li>Laravel</li><li>Eloquent</li><li>Symfony</li><li>Doctrine</li><li>Golang</li><li>Beego</li><li>Revel</li><li>Gorilla</li><li>Gorm</li><li>Node.js</li><li>Express</li><li>Knex.js</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Frontend</h4>
+            
+              <ul class="tag-list">
+                <li>Nuxt.js</li><li>Vue.js</li><li>Webpack</li><li>PostCSS</li><li>Tailwindcss</li><li>Storybook</li><li>Lighthouse</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Testing</h4>
+            
+              <ul class="tag-list">
+                <li>Phpunit</li><li>Jest</li><li>Cypress</li><li>Percy</li><li>Molecule</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Database</h4>
+            
+              <ul class="tag-list">
+                <li>PostgreSQL</li><li>MySQL</li><li>Redis</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Message Queue</h4>
+            
+              <ul class="tag-list">
+                <li>Kafka</li><li>RabbitMQ</li><li>Apache Pulsar</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Storage</h4>
+            
+              <ul class="tag-list">
+                <li>S3</li><li>FTP</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Ops</h4>
+            
+              <ul class="tag-list">
+                <li>Terraform</li><li>Ansible</li><li>Packer</li><li>Vagrant</li><li>Docker</li><li>Apache Mesos</li><li>Nomad</li><li>Kubernetes</li><li>Consul</li><li>Prometheus</li><li>Grafana</li><li>Vault</li><li>Wireguard</li><li>Elasticsearch</li><li>Kibana</li><li>Nix</li><li>NixOS</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Reverse Proxy</h4>
+            
+              <ul class="tag-list">
+                <li>Traefik</li><li>Nginx</li><li>Apache</li><li>Sozu</li><li>HAProxy</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Cloud</h4>
+            
+              <ul class="tag-list">
+                <li>Clever Cloud</li><li>Cloudflare</li><li>AWS</li><li>Google App Engine</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Automation</h4>
+            
+              <ul class="tag-list">
+                <li>Github Actions</li><li>Gitlab CI</li><li>Jenkins</li>
+              </ul>
+            
+          </div>
+        
+      </div>
+    </section>
+  
+        
+    <section id="languages">
+      <h3>Languages</h3>
+      <div class="grid-list">
+        
+          <div>
+            <h4>Français</h4>
+            Native
+          </div>
+        
+          <div>
+            <h4>English</h4>
+            Fluent
+          </div>
+        
+      </div>
+    </section>
+  
+        
+    <section id="interests">
+      <h3>Interests</h3>
+      <div class="grid-list">
+        
+          <div>
+            <h4>Roller Derby</h4>
+            
+          </div>
+        
+          <div>
+            <h4>Harmonica</h4>
+            
+          </div>
+        
+          <div>
+            <h4>Littérature & Bande dessinées</h4>
+            
+          </div>
+        
+          <div>
+            <h4>Humanitaire</h4>
+            
+          </div>
+        
+      </div>
+    </section>
+  
+        
+      </body>
+    </html>

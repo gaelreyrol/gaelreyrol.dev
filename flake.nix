@@ -25,6 +25,7 @@
         };
       in
       {
+        formatter = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
         devShells = {
           default = pkgs.mkShell {
             packages = with pkgs; [

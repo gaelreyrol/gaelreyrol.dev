@@ -42,6 +42,22 @@ in  Resume.Basic::{
       }
     , work = Some
       [ Resume.Work::{
+        , name = Some "Mention"
+        , description = Some
+            "Mention permet aux marques et agences de gérer leur présence digitale à travers la veille en ligne et les réseaux sociaux."
+        , url = Some "https://mention.com"
+        , position = Some "Développeur Full Stack"
+        , summary = Some
+            "Amélioration continue du socle logiciel des services."
+        , skills = Some [ "PHP", "MySQL", "Symfony", "Doctrine", "PHPStan", "DDD", "CQRS" ]
+        , location = Some "Lille, France"
+        , startDate = Some "2023-02"
+        , salaries = Some
+          [     Resume.Salary::{ amount = 3200, startDate = Some "2023-02" }
+            //  monthly
+          ]
+        }
+      , Resume.Work::{
         , name = Some "KaraFun Group"
         , description = Some
             "KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké."
@@ -55,7 +71,7 @@ in  Resume.Basic::{
           ]
         , skills = Some [ "PHP", "MySQL", "Vue.js", "TypeScript", "Electron" ]
         , location = Some "Lille, France"
-        , startDate = Some "2021-08"
+        , startDate = Some "2022-08"
         , endDate = Some "2023-01"
         , salaries = Some
           [     Resume.Salary::{ amount = 3200, startDate = Some "2022-08" }

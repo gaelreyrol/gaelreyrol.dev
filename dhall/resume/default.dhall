@@ -33,6 +33,11 @@ in  Resume.Basic::{
           , username = Some "gaelreyrol"
           , url = Some "https://linkedin.com/in/gaelreyrol"
           }
+        , Resume.Profile::{
+          , network = Some "Matrix"
+          , username = Some "@Zevran:matrix.org"
+          , url = Some "https://matrix.to/#/@Zevran:matrix.org"
+          }
         ]
       }
     , work = Some

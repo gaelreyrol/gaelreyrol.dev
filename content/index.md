@@ -14,5 +14,6 @@ Vous pouvez me retrouver à différents endroits :
 - [Keybase](https://keybase.io/zevran)
 - <a rel="me" href="https://mamot.fr/@GaelReyrol">Mastodon</a>
 - [Pixelfed](https://pixelfed.fr/gaelreyrol)
+- [Matrix](https://matrix.to/#/@Zevran:matrix.org)
 
 Me contacter à l'adresse suivante : [me@gaelreyrol.dev](mailto:me@gaelreyrol.dev)

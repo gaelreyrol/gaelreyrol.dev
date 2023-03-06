@@ -25,6 +25,11 @@
         "network": "Linkedin",
         "url": "https://linkedin.com/in/gaelreyrol",
         "username": "gaelreyrol"
+      },
+      {
+        "network": "Matrix",
+        "url": "https://matrix.to/#/@Zevran:matrix.org",
+        "username": "@Zevran:matrix.org"
       }
     ],
     "url": "https://gaelreyrol.dev"
@@ -183,6 +188,32 @@
   ],
   "work": [
     {
+      "description": "Mention permet aux marques et agences de gérer leur présence digitale à travers la veille en ligne et les réseaux sociaux.",
+      "location": "Lille, France",
+      "name": "Mention",
+      "position": "Développeur Full Stack",
+      "salaries": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "per": "month",
+          "startDate": "2023-02"
+        }
+      ],
+      "skills": [
+        "PHP",
+        "MySQL",
+        "Symfony",
+        "Doctrine",
+        "PHPStan",
+        "DDD",
+        "CQRS"
+      ],
+      "startDate": "2023-02",
+      "summary": "Amélioration continue du socle logiciel des services.",
+      "url": "https://mention.com"
+    },
+    {
       "description": "KaraFun Group édite des sites et applications majeures autour de la musique instrumentale et du karaoké.",
       "endDate": "2023-01",
       "highlights": [
@@ -207,7 +238,7 @@
         "TypeScript",
         "Electron"
       ],
-      "startDate": "2021-08",
+      "startDate": "2022-08",
       "summary": "Maintenir et améliorer les services et APIs de l'ensemble du groupe.",
       "url": "https://www.karafun-group.com"
     },

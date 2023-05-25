@@ -2,10 +2,12 @@
   description = "Zola development environment with Tailwind and Dhall";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
     flake-utils.url = "github:numtide/flake-utils";
 
     dhall-resume.url = "github:gaelreyrol/dhall-resume";
+    dhall-resume.inputs.nixpkgs.follows = "nixpkgs";
+    dhall-resume.inputs.flake-utils.follows = "flake-utils";
   };
 
   outputs = { self, nixpkgs, flake-utils, dhall-resume }:
@@ -42,7 +44,7 @@
             inherit src;
 
             npmBuildScript = "styles:build";
-            npmDepsHash = "sha256-6N3y2OPmSpgWrbIPS3JJ1i06icZGq4dx+zMUCiM7mRE=";
+            npmDepsHash = "sha256-Yl4MJ1Pl22tM5IPVyw6iQnfA6thFvR0sgSiceycNlpU=";
 
             nativeBuildInputs = [ ] ++ buildPackages;
 

@@ -44,7 +44,7 @@
             inherit src;
 
             npmBuildScript = "styles:build";
-            npmDepsHash = "sha256-Yl4MJ1Pl22tM5IPVyw6iQnfA6thFvR0sgSiceycNlpU=";
+            npmDepsHash = "sha256-6g8XV+4cVuX6ReksNwuQuKcWp1zwDDygtf2ln547sbs=";
 
             nativeBuildInputs = [ ] ++ buildPackages;
 

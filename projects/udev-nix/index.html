@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+    
+
+
+
+    
+
+
+<head>
+    <meta charset="utf-8">
+    <title>udev-nix | Gaël Reyrol</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Petit utilitaire pour créer des règles udev avec Nix">
+
+    <meta property="og:title" content="udev-nix | Gaël Reyrol">
+    <meta property="og:description" content="Petit utilitaire pour créer des règles udev avec Nix">
+    
+    <meta name="og:type" property="og:type" content="website">
+    <meta name="og:site_name" property="og:site_name" content="gaelreyrol.dev">
+    
+    <meta name="twitter:title" content="udev-nix | Gaël Reyrol">
+    <meta name="twitter:description" content="Petit utilitaire pour créer des règles udev avec Nix">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="gaelreyrol.dev">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link href="https://gaelreyrol.dev/main.css" rel="stylesheet">
+</head>
+
+<body class="h-full">
+    <nav class="p-8 flex flex-col items-center space-y-2 sm:space-x-8 sm:space-y-0 sm:flex-row">
+        <a href="/">
+            <img
+                class="rounded-full w-12 h-12 sm:h-16 sm:w-16 lg:h-24 lg:w-24 bg-gray-900 p-px rounded-full"
+                src="/avatar.jpeg"
+                alt="Gaël Reyrol"
+            />
+        </a>
+        <a
+            href="https://gaelreyrol.dev/about/"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            À propos
+        </a>
+        <a
+            href="https://gaelreyrol.dev/projects/"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            Mes projets
+        </a>
+        <a
+            class="text-sm sm:text-md lg:text-xl"
+            href="https://onestla.tech/"
+            target="_blank"
+            rel="noopener"
+        >
+            #OnEstLaTech
+        </a>
+    </nav>
+    <main class="min-h-screen px-4 pb-16">
+        <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+            
+  <h1>
+    udev-nix
+  </h1>
+  <p>Cet utilitaire permet de créer des fichiers de règles udev avec Nix.</p>
+<p>Cela permet de créer des dérivations directement utilisables dans une configuration Nix, comme ceci:</p>
+<pre data-lang="nix" style="background-color:#fdf6e3;color:#657b83;" class="language-nix "><code class="language-nix" data-lang="nix"><span>{
+</span><span>  </span><span style="color:#b58900;">test </span><span style="color:#859900;">= </span><span style="color:#268bd2;">mkUdevFile </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">20-test.rules</span><span style="color:#839496;">&quot; </span><span>{
+</span><span>    </span><span style="color:#b58900;">rules </span><span style="color:#859900;">= with </span><span style="color:#268bd2;">udevLib</span><span>; {
+</span><span>      </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">Description on my udev file</span><span style="color:#839496;">&quot; </span><span style="color:#859900;">= </span><span>{
+</span><span>        </span><span style="color:#b58900;">Subsystems </span><span style="color:#859900;">= </span><span style="color:#268bd2;">operators</span><span style="color:#859900;">.</span><span style="color:#268bd2;">match </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">usb</span><span style="color:#839496;">&quot;</span><span>;
+</span><span>        </span><span style="color:#b58900;">Tag </span><span style="color:#859900;">= </span><span>[
+</span><span>          (</span><span style="color:#268bd2;">operators</span><span style="color:#859900;">.</span><span style="color:#268bd2;">add </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">uaccess</span><span style="color:#839496;">&quot;</span><span>)
+</span><span>        ];
+</span><span>      };
+</span><span>    };
+</span><span>  };
+</span><span>}
+</span></code></pre>
+<p>Ce qui donnera ce résultat dans un fichier :</p>
+<pre data-lang="text" style="background-color:#fdf6e3;color:#657b83;" class="language-text "><code class="language-text" data-lang="text"><span># Description on my udev file
+</span><span>SUBSYSTEMS==&quot;usb&quot; TAG+=&quot;uaccess&quot;
+</span></code></pre>
+<p>Il reprend la documentation man des règles <a href="https://man.archlinux.org/man/udev.7">udev</a> mais ne teste pas leur validité auprès du système.</p>
+<p>Vous pouvez retrouver les sources de ce projet <a href="https://github.com/gaelreyrol/udev-nix">ici</a>.</p>
+
+
+        </div>
+    </main>
+    <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">
+        Fait avec <strong>Zola</strong> & <strong>Tailwind CSS</strong> /
+        Construit avec <strong>Nix</strong> /
+        Hébergé par <strong>Github</strong>
+    </footer>
+</body>
+
+</html>

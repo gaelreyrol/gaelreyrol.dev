@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+    
+
+
+
+    
+
+
+<head>
+    <meta charset="utf-8">
+    <title>koreader-nix | Gaël Reyrol</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Outil pour mettre à jour KOReader sa liseuse avec Nix">
+
+    <meta property="og:title" content="koreader-nix | Gaël Reyrol">
+    <meta property="og:description" content="Outil pour mettre à jour KOReader sa liseuse avec Nix">
+    
+    <meta name="og:type" property="og:type" content="website">
+    <meta name="og:site_name" property="og:site_name" content="gaelreyrol.dev">
+    
+    <meta name="twitter:title" content="koreader-nix | Gaël Reyrol">
+    <meta name="twitter:description" content="Outil pour mettre à jour KOReader sa liseuse avec Nix">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="gaelreyrol.dev">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link href="https://gaelreyrol.dev/main.css" rel="stylesheet">
+</head>
+
+<body class="h-full">
+    <nav class="p-8 flex flex-col items-center space-y-2 sm:space-x-8 sm:space-y-0 sm:flex-row">
+        <a href="/">
+            <img
+                class="rounded-full w-12 h-12 sm:h-16 sm:w-16 lg:h-24 lg:w-24 bg-gray-900 p-px rounded-full"
+                src="/avatar.jpeg"
+                alt="Gaël Reyrol"
+            />
+        </a>
+        <a
+            href="https://gaelreyrol.dev/about/"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            À propos
+        </a>
+        <a
+            href="https://gaelreyrol.dev/projects/"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            Mes projets
+        </a>
+        <a
+            class="text-sm sm:text-md lg:text-xl"
+            href="https://onestla.tech/"
+            target="_blank"
+            rel="noopener"
+        >
+            #OnEstLaTech
+        </a>
+    </nav>
+    <main class="min-h-screen px-4 pb-16">
+        <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+            
+  <h1>
+    koreader-nix
+  </h1>
+  <p>La démarche indiquée par la documentation de KOReader pour effectuer des mises à jour manque de clareté surtout quand on met à jour sa liseuse quelques fois par an.
+Il est nécessaire d'aller sur plusieurs pages pour réunir l'ensemble des éléments, bref on s'y perd facilement.</p>
+<p>C'est pourquoi j'ai créé cet outil qui permet de mettre à jour quasi-automatiquement KOReader sur sa liseuse avec Nix.</p>
+<p>Il suffit d'exécuter la commande suivante et de mettre à jour <code>KOReader</code> puis <code>KFMon</code> si nécessaire :</p>
+<pre data-lang="bash" style="background-color:#fdf6e3;color:#657b83;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#b58900;">nix</span><span> run github:gaelreyrol/koreader-nix
+</span></code></pre>
+<p>Et voilà ;-)</p>
+<p>Vous pouvez retrouver les sources de ce projet <a href="https://github.com/gaelreyrol/koreader-nix">ici</a>.</p>
+
+
+        </div>
+    </main>
+    <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">
+        Fait avec <strong>Zola</strong> & <strong>Tailwind CSS</strong> /
+        Construit avec <strong>Nix</strong> /
+        Hébergé par <strong>Github</strong>
+    </footer>
+</body>
+
+</html>

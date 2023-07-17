@@ -12,7 +12,7 @@ Vous pouvez me retrouver à différents endroits :
 
 - [Github](https://github.com/gaelreyrol)
 - [Keybase](https://keybase.io/zevran)
-- <a rel="me" href="https://mamot.fr/@GaelReyrol">Mastodon</a>
+- <a rel="me" href="https://tech.lgbt/@gaelreyrol">Mastodon</a>
 - [Pixelfed](https://pixelfed.fr/gaelreyrol)
 - [Matrix](https://matrix.to/#/@Zevran:matrix.org)
 

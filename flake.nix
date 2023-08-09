@@ -27,7 +27,7 @@
         };
       in
       {
-        formatter = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
+        formatter = pkgs.nixpkgs-fmt;
         devShells = {
           default = pkgs.mkShell {
             packages = with pkgs; [
@@ -38,8 +38,9 @@
             ] ++ buildPackages;
           };
         };
-        packages = flake-utils.lib.flattenTree {
-          default = pkgs.buildNpmPackage {
+        packages = flake-utils.lib.flattenTree rec {
+          default = website;
+          website = pkgs.buildNpmPackage {
             inherit (npmPackageLock) name version;
             inherit src;
 
@@ -58,8 +59,19 @@
 
               runHook postInstall
             '';
+
+            checkPhase = ''
+              runHook preCheck
+
+              zola check
+
+              runHook postCheck
+            '';
           };
           inherit jsonResume;
+        };
+        checks = flake-utils.lib.flattenTree {
+          website = self.packages.${system}.website;
         };
       });
 }

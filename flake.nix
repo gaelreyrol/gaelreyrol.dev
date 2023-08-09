@@ -2,7 +2,7 @@
   description = "Zola development environment with Tailwind and Dhall";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
     flake-utils.url = "github:numtide/flake-utils";
 
     dhall-resume.url = "github:gaelreyrol/dhall-resume";

@@ -11,18 +11,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>À propos | Gaël Reyrol</title>
+    <title>OpenTelemetry Bundle | Gaël Reyrol</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Petite auto-présentation">
+    <meta name="description" content="Un bundle Symfony pour OpenTelemetry PHP">
 
-    <meta property="og:title" content="À propos | Gaël Reyrol">
-    <meta property="og:description" content="Petite auto-présentation">
+    <meta property="og:title" content="OpenTelemetry Bundle | Gaël Reyrol">
+    <meta property="og:description" content="Un bundle Symfony pour OpenTelemetry PHP">
     
     <meta name="og:type" property="og:type" content="website">
     <meta name="og:site_name" property="og:site_name" content="gaelreyrol.dev">
     
-    <meta name="twitter:title" content="À propos | Gaël Reyrol">
-    <meta name="twitter:description" content="Petite auto-présentation">
+    <meta name="twitter:title" content="OpenTelemetry Bundle | Gaël Reyrol">
+    <meta name="twitter:description" content="Un bundle Symfony pour OpenTelemetry PHP">
     
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="gaelreyrol.dev">
@@ -68,19 +68,18 @@
         <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
             
   <h1>
-    À propos
+    OpenTelemetry Bundle
   </h1>
-  <blockquote>
-<p>TL;DR: Je suis développeur Full Stack avec une grosse pincée d'Ops à <a href="https://www.openstreetmap.org/relation/58404">Lille</a>.</p>
-</blockquote>
-<p>Si vous souhaitez me contacter pour une proposition d'emploi, voici mon <a href="/resume.html" target="_blank">CV</a>.
-Je vous invite aussi à consulter mes <a href="/job-standard">critères de recrutement</a>.</p>
-<p>Quelques liens supplémentaires :</p>
+  <p>OpenTelemetry propose déjà 2 paquets pour Symfony :</p>
 <ul>
-<li>J'ai choisi de rendre publique <a href="/salary-transparency">ma rémunération</a>.</li>
-<li><a href="/library">La liste des livres</a> qui constituent ma bibliothèque numérique.</li>
-<li><a href="/contributions">Quelques contributions</a> que je trouve intéressantes à montrer.</li>
+<li><code>open-telemetry/opentelemetry-auto-symfony</code></li>
+<li><code>open-telemetry/symfony-sdk-bundle</code></li>
 </ul>
+<p>Malheureusement ces 2 paquets sont incomplets et ne correspondent pas à la philosiphie Symfony:</p>
+<p>Le paquet <code>open-telemetry/opentelemetry-auto-symfony</code> auto-instrumente une application Symfony de manière unilatérale sans pouvoir choisir précisément quoi instrumenter.
+Le paquet <code>open-telemetry/symfony-sdk-bundle</code> permet d'injecter les services qui fournissent les &quot;traceurs&quot; mais sont API est limitée et ne s'intègre pas avec le paquet d'auto-instrumentation.</p>
+<p>Ce projet a pour objectif de regrouper ces 2 paquets en un seul, en proposant une configuration complète via Symfony et une instrumentation à la demande sur tous les composants Symfony disponibles et traçables.</p>
+<p>Je travaille activement sur mon temps personnel pour faire avancer ce projet et est disponible ici : <a href="https://github.com/FriendsOfOpenTelemetry/opentelemetry-bundle">https://github.com/FriendsOfOpenTelemetry/opentelemetry-bundle</a>.</p>
 
 
         </div>

@@ -105,7 +105,8 @@
     },
     {
       "keywords": [
-        "Phpunit",
+        "PHPUnit",
+        "Behat",
         "Jest",
         "Cypress",
         "Percy",
@@ -205,12 +206,15 @@
         "MySQL",
         "Symfony",
         "Doctrine",
+        "PHPUnit",
+        "Behat",
         "PHPStan",
+        "Rector",
         "DDD",
-        "CQRS"
+        "CQS"
       ],
       "startDate": "2023-02",
-      "summary": "Amélioration continue du socle logiciel des services.",
+      "summary": "Équipe Fondation, amélioration continue de l'architecture logicielle et optimisation de l'expérience développeur. Migration Symfony & Doctrine.",
       "url": "https://mention.com"
     },
     {

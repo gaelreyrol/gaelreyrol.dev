@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+    
+
+
+
+    
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Mes contributions | Gaël Reyrol</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Mes contributions &quot;notables&quot;">
+
+    <meta property="og:title" content="Mes contributions | Gaël Reyrol">
+    <meta property="og:description" content="Mes contributions &quot;notables&quot;">
+    
+    <meta name="og:type" property="og:type" content="website">
+    <meta name="og:site_name" property="og:site_name" content="gaelreyrol.dev">
+    
+    <meta name="twitter:title" content="Mes contributions | Gaël Reyrol">
+    <meta name="twitter:description" content="Mes contributions &quot;notables&quot;">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="gaelreyrol.dev">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link href="https://gaelreyrol.dev/main.css" rel="stylesheet">
+</head>
+
+<body class="h-full">
+    <nav class="p-8 flex flex-col items-center space-y-2 sm:space-x-8 sm:space-y-0 sm:flex-row">
+        <a href="/">
+            <img
+                class="rounded-full w-12 h-12 sm:h-16 sm:w-16 lg:h-24 lg:w-24 bg-gray-900 p-px rounded-full"
+                src="/avatar.jpeg"
+                alt="Gaël Reyrol"
+            />
+        </a>
+        <a
+            href="https://gaelreyrol.dev/about/"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            À propos
+        </a>
+        <a
+            href="https://gaelreyrol.dev/projects/"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            Mes projets
+        </a>
+        <a
+            class="text-sm sm:text-md lg:text-xl"
+            href="https://onestla.tech/"
+            target="_blank"
+            rel="noopener"
+        >
+            #OnEstLaTech
+        </a>
+    </nav>
+    <main class="min-h-screen px-4 pb-16">
+        <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+            
+  <h1>
+    Mes contributions
+  </h1>
+  <p>Voici un liste de contributions que je considère comme intéressantes:</p>
+<h3 id="nixpkgs">Nixpkgs</h3>
+<p>Je suis contributeur irrégulier sur le dépôt de paquets Nix.</p>
+<p>Mes contributions: <a href="https://github.com/NixOS/nixpkgs/pulls?q=is%3Apr+author%3Agaelreyrol">https://github.com/NixOS/nixpkgs/pulls?q=is%3Apr+author%3Agaelreyrol</a></p>
+<p>Grâce à Repology, vous pouvez retrouver la liste des paquets que je maintiens sur Nixpkgs: <a href="https://repology.org/maintainer/me@gaelreyrol.dev">https://repology.org/maintainer/me@gaelreyrol.dev</a></p>
+<h3 id="doctrine-behavioral-extensions-mapping-metadata-for-inherited-mapped-classes-are-not-well-collected">Doctrine Behavioral Extensions: Mapping - Metadata for inherited mapped classes are not well collected</h3>
+<p>J'ai rencontré un problème lors d'un cas particulier, la récupération depuis le cache d'une entité qui hérite d'une classe de type <code>MappedSuperclass</code>. Le moteur chargé de récupérer les méta-données cachées pour cette entité n'était pas fonctionnel dans le cas où un changement/rechargement de pilote de cache était effectué. J'ai proposé une solution ainsi que des tests qui ont été accepté.</p>
+<ul>
+<li>J'explique plus en détails et en anglais le problème ici : <a href="https://github.com/doctrine-extensions/DoctrineExtensions/issues/2600">https://github.com/doctrine-extensions/DoctrineExtensions/issues/2600</a></li>
+<li>La correction proposé sur la base de mon explication et preuve de concept : <a href="https://github.com/doctrine-extensions/DoctrineExtensions/pull/2651">https://github.com/doctrine-extensions/DoctrineExtensions/pull/2651</a></li>
+</ul>
+<h3 id="php-memory-profiler-allow-output-format-to-be-defined-from-ini-setting">php-memory-profiler: Allow output_format to be defined from ini setting</h3>
+<p>L'extension PHP Memory profiler ne permettait pas de configurer le format de fichier de décharge depuis une configuration PHP <code>.ini</code>. J'ai proposé l'ajout du paramètre <code>memprof.output_format</code>.</p>
+<p>Contribution: <a href="https://github.com/arnaud-lb/php-memory-profiler/pull/97">https://github.com/arnaud-lb/php-memory-profiler/pull/97</a></p>
+
+
+        </div>
+    </main>
+    <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">
+        Fait avec <strong>Zola</strong> & <strong>Tailwind CSS</strong> /
+        Construit avec <strong>Nix</strong> /
+        Hébergé par <strong>Github</strong>
+    </footer>
+</body>
+
+</html>

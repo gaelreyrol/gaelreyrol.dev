@@ -48,8 +48,8 @@ in  Resume.Basic::{
         , url = Some "https://mention.com"
         , position = Some "Développeur Full Stack"
         , summary = Some
-            "Amélioration continue du socle logiciel des services."
-        , skills = Some [ "PHP", "MySQL", "Symfony", "Doctrine", "PHPStan", "DDD", "CQRS" ]
+            "Équipe Fondation, amélioration continue de l'architecture logicielle et optimisation de l'expérience développeur. Migration Symfony & Doctrine."
+        , skills = Some [ "PHP", "MySQL", "Symfony", "Doctrine", "PHPUnit", "Behat", "PHPStan", "Rector", "DDD", "CQS" ]
         , location = Some "Lille, France"
         , startDate = Some "2023-02"
         , salaries = Some
@@ -300,7 +300,7 @@ in  Resume.Basic::{
         }
       , Resume.Skill::{
         , name = Some "Testing"
-        , keywords = Some [ "Phpunit", "Jest", "Cypress", "Percy", "Molecule" ]
+        , keywords = Some [ "PHPUnit", "Behat", "Jest", "Cypress", "Percy", "Molecule" ]
         }
       , Resume.Skill::{
         , name = Some "Database"

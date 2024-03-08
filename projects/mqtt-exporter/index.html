@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+    
+
+
+
+    
+
+
+<head>
+    <meta charset="utf-8">
+    <title>mqtt-exporter | Gaël Reyrol</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Exporter des messages MQTT via Prometheus">
+
+    <meta property="og:title" content="mqtt-exporter | Gaël Reyrol">
+    <meta property="og:description" content="Exporter des messages MQTT via Prometheus">
+    
+    <meta name="og:type" property="og:type" content="website">
+    <meta name="og:site_name" property="og:site_name" content="gaelreyrol.dev">
+    
+    <meta name="twitter:title" content="mqtt-exporter | Gaël Reyrol">
+    <meta name="twitter:description" content="Exporter des messages MQTT via Prometheus">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="gaelreyrol.dev">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link href="https://gaelreyrol.dev/main.css" rel="stylesheet">
+</head>
+
+<body class="h-full">
+    <nav class="p-8 flex flex-col items-center space-y-2 sm:space-x-8 sm:space-y-0 sm:flex-row">
+        <a href="/">
+            <img
+                class="rounded-full w-12 h-12 sm:h-16 sm:w-16 lg:h-24 lg:w-24 bg-gray-900 p-px rounded-full"
+                src="/avatar.jpeg"
+                alt="Gaël Reyrol"
+            />
+        </a>
+        <a
+            href="https://gaelreyrol.dev/about/"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            À propos
+        </a>
+        <a
+            href="https://gaelreyrol.dev/projects/"
+            active-class="underline"
+            class="font-medium text-sm sm:text-md lg:text-xl"
+        >
+            Mes projets
+        </a>
+        <a
+            class="text-sm sm:text-md lg:text-xl"
+            href="https://onestla.tech/"
+            target="_blank"
+            rel="noopener"
+        >
+            #OnEstLaTech
+        </a>
+    </nav>
+    <main class="min-h-screen px-4 pb-16">
+        <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+            
+  <h1>
+    mqtt-exporter
+  </h1>
+  <p>Cet outil permet d'exporter des données scalaire de type <code>int</code> ou <code>float</code> depuis des messages MQTT vers Prometheus.</p>
+<p>L'idée de cet exporter est de ne pas avoir à déployer une stack complexe de surveillance IoT. Au lieu d'avoir à utiliser une base de données de séries chronologies, j'ai souhaité pouvoir simplement me reposer sur une stack de surveillance basée sur Prometheus déjà déployée où je peux utiliser PromQL pour interroger et visualiser ces données, dans Grafana notamment.</p>
+<p>Voici un exemple des métriques exportées par Prometheus à partir des configurations suivantes :</p>
+<pre data-lang="toml" style="background-color:#fdf6e3;color:#657b83;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#268bd2;">broker </span><span>= </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">localhost:1883</span><span style="color:#839496;">&quot;
+</span><span>
+</span><span>[[</span><span style="color:#b58900;">topics</span><span>]]
+</span><span style="color:#268bd2;">name </span><span>= </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">zigbee2mqtt/my_thermostat</span><span style="color:#839496;">&quot;
+</span><span style="color:#268bd2;">fields </span><span>= [
+</span><span>    </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">outside_temperature</span><span style="color:#839496;">&quot;</span><span>,
+</span><span>    </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">inside_temperature</span><span style="color:#839496;">&quot;</span><span>,
+</span><span>]
+</span></code></pre>
+<pre data-lang="txt" style="background-color:#fdf6e3;color:#657b83;" class="language-txt "><code class="language-txt" data-lang="txt"><span># HELP mqtt_topic_field
+</span><span># TYPE mqtt_topic_field gauge
+</span><span>mqtt_topic_field{name=&quot;outside_temperature&quot;,topic=&quot;zigbee2mqtt/my_thermostat&quot;} 12.6
+</span><span>mqtt_topic_field{name=&quot;inside_temperature&quot;,topic=&quot;zigbee2mqtt/my_thermostat&quot;} 19
+</span><span># HELP mqtt_topic_messages_total
+</span><span># TYPE mqtt_topic_messages_total counter
+</span><span>mqtt_topic_messages_total{topic=&quot;zigbee2mqtt/my_thermostat&quot;} 14
+</span></code></pre>
+<p>Vous pouvez retrouver les sources de ce projet <a href="https://github.com/gaelreyrol/udev-nix">ici</a>.</p>
+
+
+        </div>
+    </main>
+    <footer class="p-4 border-t-2 text-sm sm:text-md lg:text-xl">
+        Fait avec <strong>Zola</strong> & <strong>Tailwind CSS</strong> /
+        Construit avec <strong>Nix</strong> /
+        Hébergé par <strong>Github</strong>
+    </footer>
+</body>
+
+</html>

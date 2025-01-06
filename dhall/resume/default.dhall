@@ -42,6 +42,22 @@ in  Resume.Basic::{
       }
     , work = Some
       [ Resume.Work::{
+        , name = Some "Kiosc"
+        , description = Some
+            "Logiciels de gestion en ligne et conseils IT"
+        , url = Some "https://kiosc.com"
+        , position = Some "Lead Développeur"
+        , summary = Some
+            "Conception d'un système d'appels prédictifs en temps réel, accompagnement et formation de l'équipe de développement, élaboration et plannification de la feuille de route technique."
+        , skills = Some [ "PHP", "MySQL", "Symfony", "Doctrine", "PHPUnit", "PHPStan", "React", "RabbitMQ", "Kubernetes" ]
+        , location = Some "Lille, France"
+        , startDate = Some "2024-04"
+        , salaries = Some
+          [     Resume.Salary::{ amount = 3200, startDate = Some "2024-04" }
+            //  monthly
+          ]
+        }
+      , Resume.Work::{
         , name = Some "Mention"
         , description = Some
             "Mention permet aux marques et agences de gérer leur présence digitale à travers la veille en ligne et les réseaux sociaux."
@@ -52,6 +68,7 @@ in  Resume.Basic::{
         , skills = Some [ "PHP", "MySQL", "Symfony", "Doctrine", "PHPUnit", "Behat", "PHPStan", "Rector", "DDD", "CQS" ]
         , location = Some "Lille, France"
         , startDate = Some "2023-02"
+        , endDate = Some "2024-03"
         , salaries = Some
           [     Resume.Salary::{ amount = 3200, startDate = Some "2023-02" }
             //  monthly

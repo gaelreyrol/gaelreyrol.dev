@@ -52,6 +52,7 @@ in  Resume.Basic::{
         , skills = Some [ "PHP", "MySQL", "Symfony", "Doctrine", "PHPUnit", "PHPStan", "React", "RabbitMQ", "Kubernetes" ]
         , location = Some "Lille, France"
         , startDate = Some "2024-04"
+        , endDate = Some "2024-02"
         , salaries = Some
           [     Resume.Salary::{ amount = 3200, startDate = Some "2024-04" }
             //  monthly

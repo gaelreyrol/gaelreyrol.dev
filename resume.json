@@ -189,7 +189,36 @@
   ],
   "work": [
     {
+      "description": "Logiciels de gestion en ligne et conseils IT",
+      "location": "Lille, France",
+      "name": "Kiosc",
+      "position": "Lead Développeur",
+      "salaries": [
+        {
+          "amount": 3200,
+          "currency": "EUR",
+          "per": "month",
+          "startDate": "2024-04"
+        }
+      ],
+      "skills": [
+        "PHP",
+        "MySQL",
+        "Symfony",
+        "Doctrine",
+        "PHPUnit",
+        "PHPStan",
+        "React",
+        "RabbitMQ",
+        "Kubernetes"
+      ],
+      "startDate": "2024-04",
+      "summary": "Conception d'un système d'appels prédictifs en temps réel, accompagnement et formation de l'équipe de développement, élaboration et plannification de la feuille de route technique.",
+      "url": "https://kiosc.com"
+    },
+    {
       "description": "Mention permet aux marques et agences de gérer leur présence digitale à travers la veille en ligne et les réseaux sociaux.",
+      "endDate": "2024-03",
       "location": "Lille, France",
       "name": "Mention",
       "position": "Développeur Full Stack",

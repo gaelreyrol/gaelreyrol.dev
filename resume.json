@@ -76,18 +76,26 @@
   "skills": [
     {
       "keywords": [
-        "Laravel",
-        "Eloquent",
+        "Domain Driven Design",
+        "Test / Behavior Driven Design",
+        "Command Query Separation",
+        "Clean Architecture",
+        "Clean Code",
+        "Continuous Integration",
+        "Continuous Delivery",
+        "Infrastructure as Code",
+        "Observability"
+      ],
+      "name": "Patterns"
+    },
+    {
+      "keywords": [
         "Symfony",
         "Doctrine",
-        "Golang",
-        "Beego",
-        "Revel",
-        "Gorilla",
-        "Gorm",
-        "Node.js",
-        "Express",
-        "Knex.js"
+        "PHPStan",
+        "Rector",
+        "Golang (tooling)",
+        "Node.js (tooling)"
       ],
       "name": "Backend"
     },
@@ -124,7 +132,6 @@
     },
     {
       "keywords": [
-        "Kafka",
         "RabbitMQ",
         "Apache Pulsar"
       ],
@@ -144,16 +151,13 @@
         "Packer",
         "Vagrant",
         "Docker",
-        "Apache Mesos",
-        "Nomad",
         "Kubernetes",
-        "Consul",
         "Prometheus",
         "Grafana",
         "Vault",
-        "Wireguard",
         "Elasticsearch",
         "Kibana",
+        "Linux",
         "Nix",
         "NixOS"
       ],
@@ -164,8 +168,7 @@
         "Traefik",
         "Nginx",
         "Apache",
-        "Sozu",
-        "HAProxy"
+        "Sozu"
       ],
       "name": "Reverse Proxy"
     },
@@ -173,8 +176,7 @@
       "keywords": [
         "Clever Cloud",
         "Cloudflare",
-        "AWS",
-        "Google App Engine"
+        "AWS"
       ],
       "name": "Cloud"
     },

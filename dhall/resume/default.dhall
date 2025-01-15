@@ -288,20 +288,28 @@ in  Resume.Basic::{
       ]
     , skills = Some
       [ Resume.Skill::{
+        , name = Some "Patterns"
+        , keywords = Some
+          [ "Domain Driven Design"
+          , "Test / Behavior Driven Design"
+          , "Command Query Separation"
+          , "Clean Architecture"
+          , "Clean Code"
+          , "Continuous Integration"
+          , "Continuous Delivery"
+          , "Infrastructure as Code"
+          , "Observability"
+          ]
+        }
+      , Resume.Skill::{
         , name = Some "Backend"
         , keywords = Some
-          [ "Laravel"
-          , "Eloquent"
-          , "Symfony"
+          [ "Symfony"
           , "Doctrine"
-          , "Golang"
-          , "Beego"
-          , "Revel"
-          , "Gorilla"
-          , "Gorm"
-          , "Node.js"
-          , "Express"
-          , "Knex.js"
+          , "PHPStan"
+          , "Rector"
+          , "Golang (tooling)"
+          , "Node.js (tooling)"
           ]
         }
       , Resume.Skill::{
@@ -326,7 +334,7 @@ in  Resume.Basic::{
         }
       , Resume.Skill::{
         , name = Some "Message Queue"
-        , keywords = Some [ "Kafka", "RabbitMQ", "Apache Pulsar" ]
+        , keywords = Some [ "RabbitMQ", "Apache Pulsar" ]
         }
       , Resume.Skill::{ name = Some "Storage", keywords = Some [ "S3", "FTP" ] }
       , Resume.Skill::{
@@ -337,28 +345,25 @@ in  Resume.Basic::{
           , "Packer"
           , "Vagrant"
           , "Docker"
-          , "Apache Mesos"
-          , "Nomad"
           , "Kubernetes"
-          , "Consul"
           , "Prometheus"
           , "Grafana"
           , "Vault"
-          , "Wireguard"
           , "Elasticsearch"
           , "Kibana"
+          , "Linux"
           , "Nix"
           , "NixOS"
           ]
         }
       , Resume.Skill::{
         , name = Some "Reverse Proxy"
-        , keywords = Some [ "Traefik", "Nginx", "Apache", "Sozu", "HAProxy" ]
+        , keywords = Some [ "Traefik", "Nginx", "Apache", "Sozu" ]
         }
       , Resume.Skill::{
         , name = Some "Cloud"
         , keywords = Some
-          [ "Clever Cloud", "Cloudflare", "AWS", "Google App Engine" ]
+          [ "Clever Cloud", "Cloudflare", "AWS" ]
         }
       , Resume.Skill::{
         , name = Some "Automation"
